@@ -660,4 +660,17 @@ Text Label 6810 2765 2    50   ~ 0
 RXN
 Wire Notes Line
 	5720 3405 11210 3405
+Text Notes 8035 1560 0    50   ~ 0
+NOTA: Calcular capacitores y resistencias!!\nSegun datasheet
+$Comp
+L Electronic_Cats:ATSAMD21E18A U?
+U 1 1 5E4D816D
+P 2965 5710
+F 0 "U?" H 3330 7564 45  0000 C CNN
+F 1 "ATSAMD21E18A" H 3330 7480 45  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2995 5860 20  0001 C CNN
+F 3 "https://www.mouser.mx/datasheet/2/268/SAM-D21-Family-Datasheet-DS40001882C-1381353.pdf" H 2965 5710 60  0001 C CNN
+	1    2965 5710
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
