@@ -1,2 +1,4 @@
 
 *.sch-bak
+
+.DS_Store
