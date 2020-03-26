@@ -10,6 +10,14 @@
   )
 
   (page A4)
+  (title_block
+    (title "Hunter Cat N/fc")
+    (date 2020-03-26)
+    (rev v0.1)
+    (company "Electronic Cats")
+    (comment 1 "Eduardo Contreras")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)

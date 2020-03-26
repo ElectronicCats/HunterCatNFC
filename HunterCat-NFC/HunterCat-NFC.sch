@@ -10,7 +10,7 @@ Rev "1.0"
 Comp "Electronic Cats"
 Comment1 ""
 Comment2 ""
-Comment3 ""
+Comment3 "Eduardo Contreras"
 Comment4 "Andres Sabas"
 $EndDescr
 Wire Wire Line
@@ -551,8 +551,6 @@ Text Label 8270 2705 2    50   ~ 0
 RXN
 Wire Notes Line
 	5720 3405 11210 3405
-Text Notes 9495 1500 0    50   ~ 0
-NOTA: Calcular capacitores y resistencias!!\nSegun datasheet
 $Comp
 L HunterCat-NFC-rescue:ATSAMD21E18A-Electronic_Cats U1
 U 1 1 5E4D816D
