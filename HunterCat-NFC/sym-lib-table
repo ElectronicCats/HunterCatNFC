@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name HunterCat-NFC-rescue)(type Legacy)(uri ${KIPRJMOD}/HunterCat-NFC-rescue.lib)(options "")(descr ""))
+  (lib (name hunter-cat-nfc)(type Legacy)(uri ${KIPRJMOD}/library/hunter-cat-nfc.lib)(options "")(descr ""))
+)

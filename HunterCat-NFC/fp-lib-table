@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name hunter-cat-nfc)(type KiCad)(uri ${KIPRJMOD}/library/hunter-cat-nfc.pretty)(options "")(descr ""))
+)
