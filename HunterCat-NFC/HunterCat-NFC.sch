@@ -1860,4 +1860,24 @@ Wire Wire Line
 Connection ~ 1410 2540
 Wire Wire Line
 	1410 2540 1860 2540
+$Comp
+L power:GND #PWR?
+U 1 1 5EA8FB0C
+P 980 2780
+F 0 "#PWR?" H 980 2530 50  0001 C CNN
+F 1 "GND" H 985 2607 50  0000 C CNN
+F 2 "" H 980 2780 50  0001 C CNN
+F 3 "" H 980 2780 50  0001 C CNN
+	1    980  2780
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	980  2780 885  2780
+Wire Wire Line
+	885  2780 885  2495
+Wire Wire Line
+	1085 2495 1085 2780
+Wire Wire Line
+	1085 2780 980  2780
+Connection ~ 980  2780
 $EndSCHEMATC
