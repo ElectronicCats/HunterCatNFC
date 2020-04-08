@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:HunterCat-NFC-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -940,7 +941,7 @@ U 1 1 5E5F2532
 P 5270 5995
 F 0 "F1" H 5270 6180 50  0000 C CNN
 F 1 "0.5A" H 5270 6089 50  0000 C CNN
-F 2 "" H 5270 5995 50  0001 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5270 5995 50  0001 C CNN
 F 3 "~" H 5270 5995 50  0001 C CNN
 	1    5270 5995
 	1    0    0    -1  
@@ -1886,7 +1887,7 @@ U 1 1 5E87F2EF
 P 4500 3310
 F 0 "J2" V 4560 3650 50  0000 R CNN
 F 1 "Breakout Conn" V 4450 3580 50  0000 R CNN
-F 2 "" H 4500 3310 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4500 3310 50  0001 C CNN
 F 3 "~" H 4500 3310 50  0001 C CNN
 	1    4500 3310
 	0    -1   -1   0   
