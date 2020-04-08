@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:HunterCat-NFC-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -67,7 +66,7 @@ U 1 1 5E430C46
 P 985 2495
 F 0 "Y1" V 939 2639 50  0000 L CNN
 F 1 "27.12Mhz" V 860 2115 50  0000 L CNN
-F 2 "" H 985 2495 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 985 2495 50  0001 C CNN
 F 3 "~" H 985 2495 50  0001 C CNN
 	1    985  2495
 	0    1    1    0   
@@ -1242,7 +1241,7 @@ U 1 1 5E75338C
 P 8425 4160
 F 0 "J1" H 8505 4152 50  0000 L CNN
 F 1 "Battery" H 8505 4061 50  0000 L CNN
-F 2 "" H 8425 4160 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 8425 4160 50  0001 C CNN
 F 3 "~" H 8425 4160 50  0001 C CNN
 	1    8425 4160
 	1    0    0    -1  
