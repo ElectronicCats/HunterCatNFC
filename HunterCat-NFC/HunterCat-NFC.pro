@@ -1,4 +1,4 @@
-update=viernes, 10 de abril de 2020, 01:03:38
+update=27/07/2020 17:22:32
 version=1
 last_client=kicad
 [general]
@@ -247,7 +247,18 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
-Name=Source
+Name=sa
+Clearance=0.2
+TrackWidth=0.2
+ViaDiameter=0.4
+ViaDrill=0.3
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=source
 Clearance=0.2
 TrackWidth=0.5
 ViaDiameter=0.8
