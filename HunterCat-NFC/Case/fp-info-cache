@@ -1,4 +1,4 @@
-18356696160613968
+18348717595097717
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -80044,13 +80044,6 @@ transformer flyback
 0
 10
 10
-USON
-USON-8
-USON-10 2.5x1.0mm_ Pitch 0.5mm http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf
-USON-10 2.5x1.0mm Pitch 0.5mm
-0
-8
-8
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
@@ -80821,31 +80814,3 @@ varistor SIOV
 0
 2
 2
-hunter-cat-nfc
-NFC-antenna30.4x30.4mm
-4 turns, 0.4 cu width, 0.35 spacing, 1494 nH
-
-0
-8
-2
-hunter-cat-nfc
-NFC-antenna40x40mm
-4 turns, 0.4 cu width, 0.35 spacing, 1494 nH
-
-0
-8
-2
-hunter-cat-nfc
-NFCAntennaTest
-
-
-0
-0
-0
-hunter-cat-nfc
-NFC_ANTENNA2
-
-
-0
-9
-3
