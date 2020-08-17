@@ -42,18 +42,6 @@ F 4 "GRM0335C1H560FA01D" H 8930 1475 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C15
-U 1 1 5E463B1E
-P 8930 1650
-F 0 "C15" V 8970 1755 50  0000 C CNN
-F 1 "22pF" V 8880 1770 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8930 1650 50  0001 C CNN
-F 3 "~" H 8930 1650 50  0001 C CNN
-F 4 "06035A220JAT4A" H 8930 1650 50  0001 C CNN "manf#"
-	1    8930 1650
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C_Small C19
 U 1 1 5E464034
 P 9135 1840
@@ -63,18 +51,6 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9135 1840 50  
 F 3 "~" H 9135 1840 50  0001 C CNN
 F 4 "C0603C121J5GAC" H 9135 1840 50  0001 C CNN "manf#"
 	1    9135 1840
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C21
-U 1 1 5E4643F2
-P 9390 1840
-F 0 "C21" H 9405 1775 50  0000 L CNN
-F 1 "2.2pF" H 9400 1910 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9390 1840 50  0001 C CNN
-F 3 "~" H 9390 1840 50  0001 C CNN
-F 4 "GCM0335C1E2R2CA16D" H 9390 1840 50  0001 C CNN "manf#"
-	1    9390 1840
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -100,30 +76,6 @@ F 3 "~" H 9135 2145 50  0001 C CNN
 F 4 "C0603C121J5GAC" H 9135 2145 50  0001 C CNN "manf#"
 	1    9135 2145
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C22
-U 1 1 5E464CCF
-P 9390 2145
-F 0 "C22" H 9390 2215 50  0000 L CNN
-F 1 "2.2pF" H 9410 2085 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9390 2145 50  0001 C CNN
-F 3 "~" H 9390 2145 50  0001 C CNN
-F 4 "GCM0335C1E2R2CA16D" H 9390 2145 50  0001 C CNN "manf#"
-	1    9390 2145
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C17
-U 1 1 5E4654A1
-P 8950 2245
-F 0 "C17" V 8915 2345 50  0000 C CNN
-F 1 "22pF" V 9000 2370 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8950 2245 50  0001 C CNN
-F 3 "~" H 8950 2245 50  0001 C CNN
-F 4 "06035A220JAT4A" H 8950 2245 50  0001 C CNN "manf#"
-	1    8950 2245
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:L_Small L1
@@ -172,31 +124,15 @@ Wire Wire Line
 Wire Wire Line
 	8590 1475 8770 1475
 Connection ~ 8590 1475
-Wire Wire Line
-	8830 1650 8770 1650
-Wire Wire Line
-	8770 1650 8770 1475
 Connection ~ 8770 1475
 Wire Wire Line
 	8770 1475 8830 1475
 Wire Wire Line
 	9030 1475 9135 1475
 Wire Wire Line
-	9135 1650 9030 1650
-Wire Wire Line
-	8770 1650 8770 1740
-Connection ~ 8770 1650
-Wire Wire Line
 	8770 1940 8770 1995
 Wire Wire Line
 	9135 2045 9135 1995
-Wire Wire Line
-	9390 1940 9390 1995
-Wire Wire Line
-	9390 1995 9135 1995
-Connection ~ 9390 1995
-Wire Wire Line
-	9390 1995 9390 2045
 Connection ~ 9135 1995
 Wire Wire Line
 	9135 1995 9135 1940
@@ -206,21 +142,12 @@ Connection ~ 8770 1995
 Wire Wire Line
 	8770 1995 8770 2035
 Wire Wire Line
-	9135 2245 9050 2245
-Wire Wire Line
-	8850 2245 8770 2245
-Wire Wire Line
-	8770 2245 8770 2235
-Wire Wire Line
 	9050 2430 9135 2430
 Wire Wire Line
 	9135 2430 9135 2245
 Connection ~ 9135 2245
 Wire Wire Line
 	8850 2430 8770 2430
-Wire Wire Line
-	8770 2430 8770 2245
-Connection ~ 8770 2245
 Wire Wire Line
 	8770 2430 8675 2430
 Connection ~ 8770 2430
@@ -233,8 +160,6 @@ Wire Wire Line
 	8675 2675 8675 2705
 Wire Wire Line
 	8675 2705 8545 2705
-Wire Wire Line
-	9390 2245 9135 2245
 Wire Wire Line
 	8770 1995 8510 1995
 Wire Wire Line
@@ -272,9 +197,6 @@ Wire Wire Line
 	8345 2705 8270 2705
 Wire Wire Line
 	9610 2135 9610 2245
-Wire Wire Line
-	9610 2245 9390 2245
-Connection ~ 9390 2245
 Text Label 8230 1185 2    50   ~ 0
 RXP
 Text Label 8230 1475 2    50   ~ 0
@@ -1381,17 +1303,10 @@ F 3 "~" H 10085 1985 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9390 1740 9390 1650
-Wire Wire Line
-	9390 1650 9610 1650
-Wire Wire Line
 	9135 1475 9135 1650
-Wire Wire Line
-	9135 1650 9390 1650
 Connection ~ 9135 1650
 Wire Wire Line
 	9135 1650 9135 1740
-Connection ~ 9390 1650
 $Comp
 L Device:C_Small C25
 U 1 1 5E935CDE
@@ -1431,11 +1346,11 @@ Wire Wire Line
 Wire Wire Line
 	8505 5870 8505 5955
 $Comp
-L Switch:SW_Push GPIO1
+L Switch:SW_Push SW2
 U 1 1 5F214F20
 P 4570 4290
-F 0 "GPIO1" H 4570 4575 50  0000 C CNN
-F 1 "RESET" H 4570 4484 50  0000 C CNN
+F 0 "SW2" H 4595 4110 50  0000 C CNN
+F 1 "GPIO" H 4590 4190 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 4570 4490 50  0001 C CNN
 F 3 "~" H 4570 4490 50  0001 C CNN
 F 4 "TS-1187A-C-C-B" H 4570 4290 50  0001 C CNN "manf#"
@@ -2050,4 +1965,12 @@ Wire Wire Line
 	3500 3140 3500 3180
 Wire Wire Line
 	3460 3140 3500 3140
+Wire Wire Line
+	8770 1475 8770 1740
+Wire Wire Line
+	8770 2235 8770 2430
+Wire Wire Line
+	9135 2245 9610 2245
+Wire Wire Line
+	9135 1650 9610 1650
 $EndSCHEMATC
