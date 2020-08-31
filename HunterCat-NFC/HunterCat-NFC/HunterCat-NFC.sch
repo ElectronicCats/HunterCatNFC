@@ -353,10 +353,6 @@ Wire Wire Line
 	3150 5410 3285 5410
 Wire Wire Line
 	3150 5510 3290 5510
-Text Label 3285 5410 0    50   ~ 0
-IRQ
-Text Label 3290 5510 0    50   ~ 0
-CLK
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5E4BA999
@@ -967,7 +963,6 @@ NoConn ~ 3150 4810
 NoConn ~ 3150 4910
 NoConn ~ 3150 5010
 NoConn ~ 3150 7310
-NoConn ~ 3150 7210
 NoConn ~ 3150 6910
 Text Notes 7350 3560 0    89   ~ 0
 REGULATOR AND BATTERY
@@ -1065,7 +1060,7 @@ Wire Wire Line
 	9705 4635 9705 4605
 Wire Wire Line
 	3150 4710 3275 4710
-Text Label 3275 4710 0    50   ~ 0
+Text Label 3150 5910 0    50   ~ 0
 VEN
 Wire Wire Line
 	3150 4610 3277 4610
@@ -1341,7 +1336,7 @@ Wire Wire Line
 	8505 5505 8505 5670
 Wire Wire Line
 	8505 5870 8505 5955
-Text Label 3150 6110 0    50   ~ 0
+Text Label 3255 7210 0    50   ~ 0
 GPIO
 $Comp
 L Device:R_Small R6
@@ -1938,9 +1933,9 @@ Wire Wire Line
 	9135 2245 9610 2245
 Wire Wire Line
 	9135 1650 9610 1650
-Text Label 3150 5910 0    50   ~ 0
+Text Label 3285 5410 0    50   ~ 0
 GPIO2
-Text Label 3150 6010 0    50   ~ 0
+Text Label 3290 5510 0    50   ~ 0
 GPIO1
 Wire Wire Line
 	4110 5405 4290 5405
@@ -1948,7 +1943,7 @@ Wire Wire Line
 	4110 5465 4110 5405
 Wire Wire Line
 	4690 5405 4830 5405
-Text Label 4830 5405 0    50   ~ 0
+Text Label 4810 4960 0    50   ~ 0
 GPIO2
 $Comp
 L Switch:SW_Push SW4
@@ -1990,7 +1985,7 @@ F 3 "" H 4090 5075 50  0001 C CNN
 	1    4090 5075
 	1    0    0    -1  
 $EndComp
-Text Label 4810 4960 0    50   ~ 0
+Text Label 4780 4590 0    50   ~ 0
 GPIO1
 $Comp
 L Switch:SW_Push SW3
@@ -2022,7 +2017,7 @@ Wire Wire Line
 	4220 4590 3965 4590
 Wire Wire Line
 	4620 4590 4780 4590
-Text Label 4780 4590 0    50   ~ 0
+Text Label 4830 5405 0    50   ~ 0
 GPIO
 $Comp
 L power:GND #PWR038
@@ -2037,4 +2032,10 @@ F 3 "" H 3965 4675 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	5710 3400 5710 470 
+Text Label 3150 6110 0    50   ~ 0
+CLK
+Text Label 3150 6010 0    50   ~ 0
+IRQ
+Wire Wire Line
+	3255 7210 3150 7210
 $EndSCHEMATC
