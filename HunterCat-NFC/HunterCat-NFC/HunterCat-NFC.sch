@@ -1058,8 +1058,6 @@ Wire Wire Line
 	9775 4635 9705 4635
 Wire Wire Line
 	9705 4635 9705 4605
-Wire Wire Line
-	3150 4710 3275 4710
 Text Label 3150 5910 0    50   ~ 0
 VEN
 Wire Wire Line
@@ -2038,4 +2036,5 @@ Text Label 3150 6010 0    50   ~ 0
 IRQ
 Wire Wire Line
 	3255 7210 3150 7210
+NoConn ~ 3150 4710
 $EndSCHEMATC
