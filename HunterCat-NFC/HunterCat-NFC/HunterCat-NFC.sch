@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Hunter Cat NFC"
-Date "2020-07-28"
-Rev "1.1"
+Date "2020-10-05"
+Rev "1.2"
 Comp "Electronic Cats"
 Comment1 ""
 Comment2 ""
@@ -1380,17 +1380,6 @@ $EndComp
 Wire Wire Line
 	9375 4335 9375 4285
 $Comp
-L Transistor_FET:BS107 Q1
-U 1 1 5F2FE16A
-P 9275 4085
-F 0 "Q1" H 9479 4131 50  0000 L CNN
-F 1 "DMG3415U-7" H 9479 4040 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23" H 9475 4010 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/BS107-D.PDF" H 9275 4085 50  0001 L CNN
-	1    9275 4085
-	1    0    0    -1  
-$EndComp
-$Comp
 L Diode:MBR340 D5
 U 1 1 5F318682
 P 9170 4335
@@ -1528,12 +1517,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR017
 U 1 1 5E819D40
-P 5225 1440
-F 0 "#PWR017" H 5225 1290 50  0001 C CNN
-F 1 "+3V3" H 5240 1613 50  0000 C CNN
-F 2 "" H 5225 1440 50  0001 C CNN
-F 3 "" H 5225 1440 50  0001 C CNN
-	1    5225 1440
+P 5055 1340
+F 0 "#PWR017" H 5055 1190 50  0001 C CNN
+F 1 "+3V3" H 5070 1513 50  0000 C CNN
+F 2 "" H 5055 1340 50  0001 C CNN
+F 3 "" H 5055 1340 50  0001 C CNN
+	1    5055 1340
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1544,21 +1533,6 @@ Wire Wire Line
 Connection ~ 4890 1540
 Wire Wire Line
 	3460 1540 4890 1540
-Wire Wire Line
-	4890 1540 4890 1340
-$Comp
-L power:+BATT #PWR016
-U 1 1 5E8068AB
-P 5055 1340
-F 0 "#PWR016" H 5055 1190 50  0001 C CNN
-F 1 "+BATT" H 5070 1513 50  0000 C CNN
-F 2 "" H 5055 1340 50  0001 C CNN
-F 3 "" H 5055 1340 50  0001 C CNN
-	1    5055 1340
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3460 1440 5225 1440
 Wire Wire Line
 	3460 1340 4890 1340
 Wire Notes Line
@@ -2037,4 +2011,22 @@ IRQ
 Wire Wire Line
 	3255 7210 3150 7210
 NoConn ~ 3150 4710
+Wire Wire Line
+	4890 1540 4890 1440
+Wire Wire Line
+	3460 1440 4890 1440
+Connection ~ 4890 1440
+Wire Wire Line
+	4890 1440 4890 1340
+$Comp
+L Transistor_FET:TP0610L Q?
+U 1 1 5F7FE226
+P 9275 4085
+F 0 "Q?" H 9479 4131 50  0000 L CNN
+F 1 "DMG3415U-7" H 9479 4040 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 9475 4010 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 9275 4085 50  0001 L CNN
+	1    9275 4085
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
