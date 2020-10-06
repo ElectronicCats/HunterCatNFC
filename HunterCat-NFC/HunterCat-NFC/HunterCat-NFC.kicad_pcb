@@ -42,7 +42,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.35)
     (user_trace_width 0.2)
     (user_trace_width 0.25)
     (user_trace_width 0.3)
@@ -2598,7 +2598,7 @@
     (tags SOT-23-5)
     (path /5E451F7B)
     (attr smd)
-    (fp_text reference U4 (at -0.28 2.21) (layer F.SilkS)
+    (fp_text reference U4 (at -0.97 2.2) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.12)))
     )
     (fp_text value AP2112K-3.3 (at 0 2.9) (layer F.Fab)
@@ -2721,7 +2721,7 @@
     (tags "capacitor handsolder")
     (path /5E735610)
     (attr smd)
-    (fp_text reference C23 (at 2.7 0.07) (layer F.SilkS)
+    (fp_text reference C23 (at -3.04 -0.01) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.12)))
     )
     (fp_text value 10uF (at 0 1.43) (layer F.Fab)
