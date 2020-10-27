@@ -42,7 +42,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.35)
     (user_trace_width 0.2)
     (user_trace_width 0.25)
     (user_trace_width 0.3)
@@ -1539,7 +1539,7 @@
   )
 
   (module MountingHole:MountingHole_2.2mm_M2 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5F8DFB39)
-    (at 83 106.1)
+    (at 83 106)
     (descr "Mounting Hole 2.2mm, no annular, M2")
     (tags "mounting hole 2.2mm no annular m2")
     (path /5F8F32B1)
@@ -1559,7 +1559,7 @@
   )
 
   (module MountingHole:MountingHole_2.2mm_M2 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5F8DFB31)
-    (at 83 78.4)
+    (at 83 78.5)
     (descr "Mounting Hole 2.2mm, no annular, M2")
     (tags "mounting hole 2.2mm no annular m2")
     (path /5F8F3F2E)
