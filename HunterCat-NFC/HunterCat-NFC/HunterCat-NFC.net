@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:\\Users\\lenovo\\Desktop\\Nueva carpeta\\HunterCat-NFC\\HunterCat-NFC\\HunterCat-NFC.sch")
-    (date "30/11/2020 08:28:28 p. m.")
+    (date "30/11/2020 09:34:19 p. m.")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
