@@ -877,7 +877,7 @@ U 1 1 5E75338C
 P 8085 4265
 F 0 "J1" H 8165 4257 50  0000 L CNN
 F 1 "Battery" H 8165 4166 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical" H 8085 4265 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical_SMD" H 8085 4265 50  0001 C CNN
 F 3 "~" H 8085 4265 50  0001 C CNN
 F 4 "-" H 8085 4265 50  0001 C CNN "LCSC#"
 F 5 "-" H 8085 4265 50  0001 C CNN "manf#"
