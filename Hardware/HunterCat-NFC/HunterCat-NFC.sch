@@ -502,7 +502,7 @@ F 3 "" H 10895 4260 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_C_Plug_USB2.0 P1
+L HunterCat-NFC-rescue:USB_C_Plug_USB2.0-Connector P1
 U 1 1 5E5B360D
 P 4450 6595
 F 0 "P1" H 4557 7462 50  0000 C CNN
@@ -1097,7 +1097,7 @@ Wire Notes Line
 Wire Notes Line
 	7850 470  7840 470 
 $Comp
-L Regulator_Linear:AP2112K-3.3 U4
+L HunterCat-NFC-rescue:AP2112K-3.3-Regulator_Linear U4
 U 1 1 5E451F7B
 P 10405 4415
 F 0 "U4" H 10405 4757 50  0000 C CNN
