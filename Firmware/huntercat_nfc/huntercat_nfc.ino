@@ -13,8 +13,10 @@
    please buy us a round!
    Distributed as-is; no warranty is given.
 */
-
 #include "Electroniccats_PN7150.h"
+
+//#define DEBUG
+
 #define PN7150_IRQ   (15)
 #define PN7150_VEN   (14)
 #define PN7150_ADDR  (0x28)
@@ -45,20 +47,27 @@ uint8_t ppdol[255] = {0x80, 0xA8, 0x00, 0x00, 0x02, 0x83, 0x00};
 uint8_t mode = 2;                                                  // modes: 1 = Reader/ Writer, 2 = Emulation
 
 int resetMode() { //Reset the configuration mode after each reading
+#ifdef DEBUG
   Serial.println("Initializing...");
-
+#endif
   if (nfc.connectNCI()) { //Wake up the board
+#ifdef DEBUG
     Serial.println("Error while setting up the mode, check connections!");
+#endif
     while (1);
   }
 
   if (nfc.ConfigureSettings()) {
+#ifdef DEBUG
     Serial.println("The Configure Settings failed!");
+#endif
     while (1);
   }
 
   if (nfc.ConfigMode(mode)) { //Set up the configuration mode
+#ifdef DEBUG
     Serial.println("The Configure Mode failed!!");
+#endif
     while (1);
   }
 
@@ -74,12 +83,12 @@ void blink(int pin, int msdelay, int times) {
   }
 }
 
+#ifdef DEBUG
 //Print hex data buffer in format
 void printBuf(const byte * data, const uint32_t numBytes) {
   uint32_t szPos;
   for (szPos = 0; szPos < numBytes; szPos++) {
     Serial.print(F("0x"));
-
     // Append leading 0 for small values
     if (data[szPos] <= 0xF)
       Serial.print(F("0"));
@@ -91,7 +100,7 @@ void printBuf(const byte * data, const uint32_t numBytes) {
   }
   Serial.println();
 }
-
+#endif
 /*
     treatPDOL function:
    Make a right format challenge using the card PDOL to extract more data(track 2)
@@ -99,7 +108,9 @@ void printBuf(const byte * data, const uint32_t numBytes) {
 */
 uint8_t treatPDOL(uint8_t* apdu) {
   uint8_t plen = 7;
+#ifdef DEBUG
   Serial.println("");
+#endif
   //PDOL Format: 80 A8 00 00 + (Tamaño del PDOL+2) + 83 + Tamaño del PDOL + PDOL + 00
   for (uint8_t i = 1; i <= apdu[0]; i++) {
     if (apdu[i] == 0x9F && apdu[i + 1] == 0x66) {
@@ -168,6 +179,7 @@ uint8_t treatPDOL(uint8_t* apdu) {
   return plen;
 }
 
+#ifdef DEBUG
 void printData(uint8_t* buff, uint8_t lenbuffer, uint8_t cmd) {
   char tmp[1];
   if (cmd == 1)
@@ -184,6 +196,7 @@ void printData(uint8_t* buff, uint8_t lenbuffer, uint8_t cmd) {
     Serial.print(tmp); Serial.print(" ");
   }
 }
+#endif
 
 //Find Track 2 in the NFC reading transaction
 void seekTrack2() {
@@ -207,9 +220,10 @@ void seekTrack2() {
     while (nfc.CardModeReceive(apdubuffer, &apdulen) != 0) { }
 
     if (nfc.CardModeReceive(apdubuffer, &apdulen) == 0) {
+#ifdef DEBUG
       printData(apdus[i], apdusLen[i], 1);
       printData(apdubuffer, apdulen, 4);
-
+#endif
       for (uint8_t u = 0; u < apdulen; u++) {
         if (i == 1) {
           if (apdubuffer[u] == 0x9F && apdubuffer[u + 1] == 0x38) {
@@ -230,6 +244,7 @@ void seekTrack2() {
           }
         }
       }
+#ifdef DEBUG
       if (i == 1) {
         char tmp[1];
         Serial.print("\nFull challenge: ");
@@ -240,9 +255,12 @@ void seekTrack2() {
         Serial.println("");
       }
       Serial.println("");
+#endif
     }
+#ifdef DEBUG
     else
       Serial.println("Error reading the card!");
+#endif
   }
 }
 
@@ -257,8 +275,9 @@ void readingmifare(void) {
 
   /* Read block 4 */
   unsigned char readm[] = {0x10, 0x30, currentblock};
-
+#ifdef DEBUG
   Serial.println("Reading Mifare...");
+#endif
   // Now we try to go through all 16 sectors (each having 4 blocks)
   // authenticating each sector, and then dumping the blocks
   for (currentblock = 0; currentblock < 64; currentblock++) {
@@ -276,7 +295,10 @@ void readingmifare(void) {
     }
     // If we're still not authenticated just skip the block
     if (!authenticated) {
-      Serial.print("Block "); Serial.print(currentblock, DEC); Serial.println(" unable to authenticate");
+#ifdef DEBUG
+      Serial.print("Block "); Serial.print(currentblock, DEC);
+      Serial.println(" unable to authenticate");
+#endif
     } else {
       // Authenticated ... we should be able to read the block now
       // Dump the data into the 'data' array
@@ -288,6 +310,7 @@ void readingmifare(void) {
         success = 1;
       }
       if (success) {
+#ifdef DEBUG
         // Read successful
         Serial.print("Block "); Serial.print(currentblock, DEC);
         if (currentblock < 10)
@@ -297,11 +320,16 @@ void readingmifare(void) {
 
         // Dump the raw data
         //nfc.PrintHexChar(data, 16);
+
         printBuf(respm + 1, respsize - 2);
+#endif
       } else {
+#ifdef DEBUG
         // Oops ... something happened
-        Serial.print("Block "); Serial.print(currentblock, DEC);
+        Serial.print("Block ");
+        Serial.print(currentblock, DEC);
         Serial.println(" unable to read this block");
+#endif
       }
     }
     delay(50);
@@ -314,7 +342,9 @@ void nfcdetectreader() {
     if ((CmdSize >= 2) && (Cmd[0] == 0x00)) { //Expect at least two bytes
       switch (Cmd[1]) {
         case 0xA4: //Something tries to select a file, meaning that it is a reader
+#ifdef DEBUG
           Serial.println("Card reader detected!");
+#endif
           break;
 
         default:
@@ -339,11 +369,13 @@ void visamsd() {
     if (nfc.CardModeReceive(Cmd, &CmdSize) == 0) { //Data in buffer?
 
       while ((CmdSize < 2) && (Cmd[0] != 0x00)) {}
-
+#ifdef DEBUG
       printData(Cmd, CmdSize, 1);
+#endif
       nfc.CardModeSend(apdus2[i], apdusLen2[i]);
+#ifdef DEBUG
       printData(apdus2[i], apdusLen2[i], 3);
-
+#endif
     } else {
       i--;
     }
@@ -356,39 +388,49 @@ void detectcard() {
 
     if (RfInterface.ModeTech == MODE_POLL || RfInterface.ModeTech == TECH_PASSIVE_NFCA) {
       char tmp[16];
+#ifdef DEBUG
       Serial.print("\tSENS_RES = ");
       sprintf(tmp, "0x%.2X", RfInterface.Info.NFC_APP.SensRes[0]);
       Serial.print(tmp); Serial.print(" ");
       sprintf(tmp, "0x%.2X", RfInterface.Info.NFC_APP.SensRes[1]);
       Serial.print(tmp); Serial.println(" ");
-
       Serial.print("\tNFCID = ");
       printBuf(RfInterface.Info.NFC_APP.NfcId, RfInterface.Info.NFC_APP.NfcIdLen);
-
+#endif
       if (RfInterface.Info.NFC_APP.NfcIdLen != 4) {
+#ifdef DEBUG
         Serial.println("Ooops ... this doesn't seem to be a Mifare Classic card!");
+#endif
         return;
       }
 
       if (RfInterface.Info.NFC_APP.SelResLen != 0) {
+#ifdef DEBUG
         Serial.print("\tSEL_RES = ");
         sprintf(tmp, "0x%.2X", RfInterface.Info.NFC_APP.SelRes[0]);
         Serial.print(tmp); Serial.println(" ");
+#endif
       }
     }
     switch (RfInterface.Protocol) {
       case PROT_ISODEP:
+#ifdef DEBUG
         Serial.println(" - Found ISODEP card");
+#endif
         seekTrack2();
         break;
 
       case PROT_MIFARE:
+#ifdef DEBUG
         Serial.println(" - Found MIFARE card");
+#endif
         readingmifare();
         break;
 
       default:
+#ifdef DEBUG
         Serial.println(" - Not a valid card");
+#endif
         break;
     }
 
@@ -399,7 +441,9 @@ void detectcard() {
 
     //* Wait for card removal
     nfc.ProcessReaderMode(RfInterface, PRESENCE_CHECK);
+#ifdef DEBUG
     Serial.println("CARD REMOVED!");
+#endif
 
     nfc.StopDiscovery();
     nfc.StartDiscovery(mode);
@@ -414,9 +458,11 @@ void mifarevisa() {
 }
 
 void setup() {
+#ifdef DEBUG
   Serial.begin(9600);
   while (!Serial);
   Serial.println("Detecting NFC readers with PN7150");
+#endif
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(PIN_LED2, OUTPUT);
   pinMode(PIN_LED2, OUTPUT);
@@ -426,7 +472,9 @@ void setup() {
   pinMode(BUTTON_2, INPUT_PULLUP);
 
   resetMode();
+#ifdef DEBUG
   Serial.println("HunterCat NFC v1.0");
+#endif
 }
 
 // to detect card readers: nfcdetectreader()
@@ -437,23 +485,31 @@ void setup() {
 void loop() {
   if (digitalRead(BUTTON_0) == 0) {
     // to detect card readers: nfcdetectreader()
+#ifdef DEBUG
     Serial.println("nfcdetectreader");
+#endif
     nfcdetectreader();
   }
   if (digitalRead(BUTTON_1) == 0) {
     // to read visa card: mifarevisa()
+#ifdef DEBUG
     Serial.println("mifarevisa");
+#endif
     mifarevisa();
   }
   if (digitalRead(BUTTON_2) == 0) {
     // to emulate Visa MSD: visamsd()
+#ifdef DEBUG
     Serial.println("visamsd");
+#endif
     visamsd();
   }
   /*else {
     // to read Mifare card:mifarevisa();
+    #ifdef DEBUG
     Serial.println("mifarevisa");
+    #endif
     mifarevisa();
-  }*/
+    }*/
   //delay(1000);
 }
