@@ -2,6 +2,10 @@
 
 **This a Pre-Order Product, shipping 4 April**
 
+<a href="https://electroniccats.com/store/hunter-cat-nfc//">
+  <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" height="104" />
+</a>
+
 ## How does the Hunter Cat NFC work?
 
 The Hunter Cat NFC is the latest security tool for contactless (Near Field Communication) used in access control, identification and bank cards. Specially created to identify NFC readers and sniffing tools, with this tool you can audit, read or emulate cards of different types. 
@@ -64,10 +68,6 @@ Peer-to-peer mode establishes a two-way communication channel between a pair of 
 - ISO/IEC 15693/ICODE VCD mode 
 - Includes NXP ISO/IEC14443-A and Innovatron ISO/IEC14443-B intellectual property licensing rights
 
-
-<a href="https://electroniccats.com/store/catwan_usb-stick/">
-  <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" height="104" />
-</a>
 
 ## License
 Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
