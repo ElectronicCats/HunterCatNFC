@@ -1,6 +1,6 @@
 # Huntercat NFC
 
-**This i Pre-Order Product, shipping 4 April**
+**This a Pre-Order Product, shipping 4 April**
 
 ## How does the Hunter Cat NFC work?
 
