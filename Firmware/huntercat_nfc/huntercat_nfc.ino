@@ -36,6 +36,15 @@ unsigned char STATUSOK[] = {0x90, 0x00}, Cmd[256], CmdSize;
 
 uint8_t mode = 2;  // modes: 1 = Reader/ Writer, 2 = Emulation
 
+void RGB(int R, int G, int B)
+{
+  int g = map(G, 0, 255, 0, 1023);
+  
+  analogWrite(PIN_LED,R);
+  analogWrite(PIN_LED2,B);
+  analogWrite(PIN_LED3,g);
+}
+
 void blink(int pin, int msdelay, int times) {
   for (int i = 0; i < times; i++) {
     digitalWrite(pin, HIGH);
@@ -127,5 +136,17 @@ void loop() {
       nfc.CardModeSend(STATUSOK, sizeof(STATUSOK));
     }
   }
+  
+  int analog = analogRead(A0);
+  int voltagepercent = map(analog, 0, 645, 0, 100 );
+  
+  //Low Battery < 30%
+  if(voltagepercent < 30){
+    RGB(234, 200, 203); //Pink
+    delay(100);
+    RGB(0, 0, 0);
+    delay(100);
+  }
+  
   blink(LED_BUILTIN, 10, 1);
 }
