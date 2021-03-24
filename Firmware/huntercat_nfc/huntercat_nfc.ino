@@ -111,7 +111,7 @@ void setup() {
   blink(LED_BUILTIN, 200, 2);
   blink(PIN_LED2, 200, 2);
   blink(PIN_LED3, 200, 2);
-  Serial.println("HunterCat NFC v1.0");
+  Serial.println("HunterCat NFC v1.3");
   Serial.println("Looking for card readers...");
 }
 
