@@ -80,28 +80,35 @@ void setup() {
   Serial.println("Initializing...");
   if (nfc.connectNCI()) { //Wake up the board
     Serial.println("Error while setting up the mode, check connections!");
-    while (1);
+    while (1){
+      blink(LED_BUILTIN, 200, 3);
+    }
   }
 
   if (nfc.ConfigureSettings()) {
     Serial.println("The Configure Settings failed!");
-    while (1);
+    while (1){
+      blink(LED_BUILTIN, 200, 5);
+    }
   }
 
   if (nfc.ConfigMode(mode)) { //Set up the configuration mode
     Serial.println("The Configure Mode failed!!");
-    while (1);
+    while (1){
+      blink(LED_BUILTIN, 200, 10);
+    }
   }
   nfc.StartDiscovery(mode); //NCI Discovery mode
   blink(LED_BUILTIN, 200, 2);
   blink(PIN_LED2, 200, 2);
   blink(PIN_LED3, 200, 2);
   Serial.println("HunterCat NFC v1.0");
+  Serial.println("Looking for card readers...");
 }
 
 // to detect NFC card readers
 void loop() {
-  Serial.println("Looking for card readers...");
+  
   if (nfc.CardModeReceive(Cmd, &CmdSize) == 0) { //Data in buffer?
     if ((CmdSize >= 2) && (Cmd[0] == 0x00)) { //Expect at least two bytes
       switch (Cmd[1]) {
