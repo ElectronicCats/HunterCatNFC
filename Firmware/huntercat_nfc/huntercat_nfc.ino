@@ -54,25 +54,6 @@ void blink(int pin, int msdelay, int times) {
   }
 }
 
-//Detect NFC Readers
-void nfcdetectreader() {
-  Serial.println("Looking for card readers...");
-  if (nfc.CardModeReceive(Cmd, &CmdSize) == 0) { //Data in buffer?
-    if ((CmdSize >= 2) && (Cmd[0] == 0x00)) { //Expect at least two bytes
-      switch (Cmd[1]) {
-        case 0xA4: //Something tries to select a file, meaning that it is a reader
-          Serial.println("Card reader detected!");
-          blink(PIN_LED2, 200, 3);
-          break;
-
-        default:
-          break;
-      }
-      nfc.CardModeSend(STATUSOK, sizeof(STATUSOK));
-    }
-  }
-}
-
 void setup() {
   Serial.begin(9600);
   //while (!Serial);
