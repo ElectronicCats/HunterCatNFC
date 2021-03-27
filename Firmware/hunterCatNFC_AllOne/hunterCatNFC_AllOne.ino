@@ -313,6 +313,35 @@ void readingmifare(void) {
   Serial.println("Finish Dump Card...");
 }
 
+//Emulate a Visa MSD
+void visamsd() {
+  mode = 2;
+  resetMode();
+  memcpy(&card[0], last, sizeof(last));
+  memcpy(&card[4], token, sizeof(token));
+  memcpy(&card[23], statusapdu, sizeof(statusapdu));
+
+  uint8_t *apdus2[] = {ppsea, visaa, processinga, card, finished, finished};
+  uint8_t apdusLen2 [] = { sizeof(ppsea), sizeof(visaa), sizeof(processinga), sizeof(card), sizeof(finished), sizeof(finished)};
+
+  for (uint8_t i = 0; i < 6; i++) {
+
+    if (nfc.CardModeReceive(Cmd, &CmdSize) == 0) { //Data in buffer?
+
+      while ((CmdSize < 2) && (Cmd[0] != 0x00)) {}
+
+      printData(Cmd, CmdSize, 1);
+
+      nfc.CardModeSend(apdus2[i], apdusLen2[i]);
+
+      printData(apdus2[i], apdusLen2[i], 3);
+
+    } else {
+      i--;
+    }
+  }
+}
+
 //Is it a card in range? for Mifare and ISO cards
 void detectcard() {
   while (detectCardFlag == false) {
@@ -450,6 +479,6 @@ void loop() {
   if (digitalRead(BUTTON_2) == 0) {
     // to emulate Visa MSD: visamsd()
     Serial.println("visamsd");
-    //visamsd();
+    visamsd();
   }
 }
