@@ -21,10 +21,12 @@
 #define PN7150_IRQ   (15)
 #define PN7150_VEN   (14)
 #define PN7150_ADDR  (0x28)
-#define KEY_MFC      (0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF )        // Default Mifare Classic key
+
+#define KEY_MFC      0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF        // Default Mifare Classic key
 
 Electroniccats_PN7150 nfc(PN7150_IRQ, PN7150_VEN, PN7150_ADDR); // creates a global NFC device interface object, attached to pins 7 (IRQ) and 8 (VEN) and using the default I2C address 0x28
 RfIntf_t RfInterface;
+
 uint8_t mode = 2;                                                  // modes: 1 = Reader/ Writer, 2 = Emulation
 
 unsigned char STATUSOK[] = {0x90, 0x00}, Cmd[256], CmdSize;
@@ -426,6 +428,7 @@ void nfcdetectreader() {
     }
   }
   }
+  detectCardFlag==false;
 }
 
 //To read Mifare and Visa
@@ -467,6 +470,7 @@ void loop() {
     // to detect card readers: nfcdetectreader()
     Serial.println("nfcdetectreader");
     nfcdetectreader();
+    delay(100);
   }
   if (digitalRead(BUTTON_1) == 0) {
     // to read visa card: mifarevisa()
@@ -478,5 +482,6 @@ void loop() {
     // to emulate Visa MSD: visamsd()
     Serial.println("visamsd");
     visamsd();
+    delay(100);
   }
 }
