@@ -4,6 +4,7 @@
 
    Authors:
           Salvador Mendoza - @Netxing - salmg.net
+          Andrés Sabas - @sabasacustico
           For Electronic Cats - electroniccats.com
 
     January 2021
@@ -41,9 +42,6 @@ uint8_t last [4] =  {0x70, 0x15, 0x57, 0x13};
 uint8_t card[25] = {};
 uint8_t statusapdu[2] = {0x90, 0x00};
 uint8_t finished[] = {0x6f, 0x00};
-
-#define BLK_NB_MFC      4                                          // Block tat wants to be read
-#define KEY_MFC         0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF         // Default Mifare Classic key
 
 boolean detectCardFlag = false;
 
@@ -456,7 +454,7 @@ void setup() {
   digitalWrite(PIN_LED2, LOW);
 
   resetMode();
-  Serial.println("HunterCat NFC v1.0");
+  Serial.println("HunterCat NFC v1.3");
 }
 
 // to detect card readers: nfcdetectreader()
