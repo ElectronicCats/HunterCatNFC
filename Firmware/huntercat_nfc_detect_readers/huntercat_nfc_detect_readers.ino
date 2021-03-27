@@ -1,6 +1,5 @@
 /**
-   Example to detect NFC readers, read a Mifare Card, read a Visa card
-   and emulate a Visa MSD card.
+   Example to detect NFC readers.
 
    Authors:
           Salvador Mendoza - @Netxing - salmg.net
