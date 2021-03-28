@@ -49,7 +49,7 @@ boolean detectCardFlag = false;
 
 uint8_t ppdol[255] = {0x80, 0xA8, 0x00, 0x00, 0x02, 0x83, 0x00};
 
-int resetMode() { //Reset the configuration mode after each reading
+void resetMode() { //Reset the configuration mode after each reading
   Serial.println("Reset...");
   if (nfc.connectNCI()) { //Wake up the board
     Serial.println("Error while setting up the mode, check connections!");
