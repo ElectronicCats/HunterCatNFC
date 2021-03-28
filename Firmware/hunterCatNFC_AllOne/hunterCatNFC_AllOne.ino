@@ -428,7 +428,7 @@ void nfcdetectreader() {
     }
   }
   }
-  detectCardFlag==false;
+  detectCardFlag=false;
 }
 
 //To read Mifare and Visa
