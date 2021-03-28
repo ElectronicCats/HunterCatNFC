@@ -189,7 +189,7 @@ void printData(uint8_t* buff, uint8_t lenbuffer, uint8_t cmd) {
 
 //Find Track 2 in the NFC reading transaction
 void seekTrack2() {
-  bool exc, chktoken = false, existpdol = false;
+  bool chktoken = false, existpdol = false;
   uint8_t apdubuffer[255] = {}, apdulen;
 
   uint8_t ppse[] = {0x00, 0xA4, 0x04, 0x00, 0x0e, 0x32, 0x50, 0x41, 0x59, 0x2e, 0x53, 0x59, 0x53, 0x2e, 0x44, 0x44, 0x46, 0x30, 0x31, 0x00}; //20
