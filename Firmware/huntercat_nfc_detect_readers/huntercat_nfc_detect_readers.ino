@@ -23,6 +23,8 @@
 */
 
 #include "Electroniccats_PN7150.h"
+#include "SdFat.h"
+#include "Adafruit_SPIFlash.h"
 
 #define PN7150_IRQ   (15)
 #define PN7150_VEN   (14)
@@ -30,6 +32,10 @@
 
 Electroniccats_PN7150 nfc(PN7150_IRQ, PN7150_VEN, PN7150_ADDR);  // creates a global NFC device interface object, attached to pins 7 (IRQ) and 8 (VEN) and using the default I2C address 0x28
 RfIntf_t RfInterface;                                            //Intarface to save data for multiple tags
+
+Adafruit_FlashTransport_SPI flashTransport(EXTERNAL_FLASH_USE_CS, EXTERNAL_FLASH_USE_SPI);
+
+Adafruit_SPIFlash flash(&flashTransport);
 
 unsigned char STATUSOK[] = {0x90, 0x00}, Cmd[256], CmdSize;
 
@@ -65,6 +71,15 @@ void setup() {
   digitalWrite(LED_BUILTIN, LOW);
   digitalWrite(PIN_LED2, LOW);
   digitalWrite(PIN_LED3, LOW);
+
+  // Initialize flash library and check its chip ID.
+  if (!flash.begin()) {
+    Serial.println("Error, failed to initialize flash chip!");
+    while(1){
+      blink(LED_BUILTIN, 600, 3);;
+    }
+  }
+  Serial.print("Flash chip JEDEC ID: 0x"); Serial.println(flash.getJEDECID(), HEX);
 
   Serial.println("Initializing...");
   if (nfc.connectNCI()) { //Wake up the board
