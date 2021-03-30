@@ -516,6 +516,14 @@ void loop() {
     delay(100);
   }
 
+  int analog = analogRead(A0);
+  int voltagepercent = map(analog, 0, 645, 0, 100 );
+
+  //Low Battery < 30%
+  if (voltagepercent < 30) {
+    RGB(234, 200, 203); //Pink
+    delay(100);
+    RGB(0, 0, 0);
     delay(100);
   }
   blink(LED_BUILTIN, 10, 1);
