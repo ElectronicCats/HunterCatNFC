@@ -427,24 +427,24 @@ void detectcard() {
 void nfcdetectreader() {
   mode = 2;
   resetMode();
-  while(detectCardFlag==false){
-  Serial.println("Looking for card readers...");
-  if (nfc.CardModeReceive(Cmd, &CmdSize) == 0) { //Data in buffer?
-    if ((CmdSize >= 2) && (Cmd[0] == 0x00)) { //Expect at least two bytes
-      switch (Cmd[1]) {
-        case 0xA4: //Something tries to select a file, meaning that it is a reader
-          Serial.println("Card reader detected!");
-          detectCardFlag=true;
-          break;
+  while (detectCardFlag == false) {
+    Serial.println("Looking for card readers...");
+    if (nfc.CardModeReceive(Cmd, &CmdSize) == 0) { //Data in buffer?
+      if ((CmdSize >= 2) && (Cmd[0] == 0x00)) { //Expect at least two bytes
+        switch (Cmd[1]) {
+          case 0xA4: //Something tries to select a file, meaning that it is a reader
+            Serial.println("Card reader detected!");
+            detectCardFlag = true;
+            break;
 
-        default:
-          break;
+          default:
+            break;
+        }
+        nfc.CardModeSend(STATUSOK, sizeof(STATUSOK));
       }
-      nfc.CardModeSend(STATUSOK, sizeof(STATUSOK));
     }
   }
-  }
-  detectCardFlag=false;
+  detectCardFlag = false;
 }
 
 //To read Mifare and Visa
