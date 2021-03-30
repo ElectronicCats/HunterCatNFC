@@ -75,6 +75,15 @@ void resetMode() { //Reset the configuration mode after each reading
   nfc.StartDiscovery(mode); //NCI Discovery mode
 }
 
+void RGB(int R, int G, int B)
+{
+  int g = map(G, 0, 255, 0, 1023);
+  
+  analogWrite(PIN_LED,R);
+  analogWrite(PIN_LED2,B);
+  analogWrite(PIN_LED3,g);
+}
+
 void blink(int pin, int msdelay, int times) {
   for (int i = 0; i < times; i++) {
     digitalWrite(pin, HIGH);
@@ -316,6 +325,7 @@ void readingmifare(void) {
     }
     delay(50);
   }
+  
   Serial.println("Finish Dump Card...");
 }
 
@@ -484,19 +494,29 @@ void loop() {
   if (digitalRead(BUTTON_0) == 0) {
     // to detect card readers: nfcdetectreader()
     Serial.println("nfcdetectreader");
+    RGB(255, 255, 255); //White?
     nfcdetectreader();
+    RGB(0, 0, 0); //Green
     delay(100);
   }
   if (digitalRead(BUTTON_1) == 0) {
     // to read visa card: mifarevisa()
+    RGB(0, 0, 255); //Blue
     Serial.println("mifarevisa");
     mifarevisa();
+    RGB(0, 0, 0); //Green
     delay(100);
   }
   if (digitalRead(BUTTON_2) == 0) {
     // to emulate Visa MSD: visamsd()
     Serial.println("visamsd");
+    RGB(0, 255, 0); //Green
     visamsd();
+    RGB(0, 0, 0);
     delay(100);
   }
+
+    delay(100);
+  }
+  blink(LED_BUILTIN, 10, 1);
 }
