@@ -112,36 +112,36 @@ void setup() {
 
 // to detect NFC card readers
 void loop() {
-  
+  int analog = analogRead(A0);
+  int voltagepercent = map(analog, 0, 645, 0, 100 );
+     
   if (nfc.CardModeReceive(Cmd, &CmdSize) == 0) { //Data in buffer?
     if ((CmdSize >= 2) && (Cmd[0] == 0x00)) { //Expect at least two bytes
       switch (Cmd[1]) {
         case 0xA4: //If tries to select a file, meaning that it is a reader
           Serial.println("Card reader detected!");
-          digitalWrite(PIN_LED2, HIGH);
-          digitalWrite(PIN_LED3, HIGH);
+          RGB(0,255,255);
           delay(1000);
-          digitalWrite(PIN_LED2, LOW);
-          digitalWrite(PIN_LED3, LOW);
+          RGB(0,0,0);
           break;
 
         default:
           break;
-      }
-      nfc.CardModeSend(STATUSOK, sizeof(STATUSOK));
+      }     
+     nfc.CardModeSend(STATUSOK, sizeof(STATUSOK));
     }
   }
   
-  int analog = analogRead(A0);
-  int voltagepercent = map(analog, 0, 645, 0, 100 );
-  
-  //Low Battery < 30%
-  if(voltagepercent < 30){
-    RGB(234, 200, 203); //Pink
-    delay(100);
-    RGB(0, 0, 0);
-    delay(100);
-  }
-  
-  blink(LED_BUILTIN, 10, 1);
+  //Low Battery < 95%
+  if (voltagepercent < 90) {
+   RGB(234, 200, 203); //Pink
+   delay(100);
+   RGB(0, 0, 0);
+   delay(100);
+   }
+ 
+  RGB(255,0,0);
+  delay(100);
+  RGB(0, 0, 0);
+  delay(100);
 }
