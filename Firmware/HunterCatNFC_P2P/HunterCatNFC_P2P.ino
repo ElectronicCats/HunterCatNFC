@@ -47,9 +47,9 @@ void RGB(int R, int G, int B)
 void setup(){
   Serial.begin(9600);
   while(!Serial);
-  Serial.println("Detectando dispositivos P2P con PN7150");
+  Serial.println("Detect P2P devices with PN7150");
   
-  Serial.println("Iniciando...");                
+  Serial.println("Initializing...");                
   if (nfc.connectNCI()) { //Wake up the board
     Serial.println("Error while setting up the mode, check connections!");
     while (1);
@@ -65,7 +65,7 @@ void setup(){
     while (1);
   }
   nfc.StartDiscovery(mode); //NCI Discovery mode
-  Serial.println("Esperando por un dispositivo P2P...");
+  Serial.println("Waiting for P2P device...");
 }
 
 void loop(){
@@ -78,12 +78,12 @@ void loop(){
    if (RfInterface.Interface == INTF_NFCDEP){
     if ((RfInterface.ModeTech & MODE_LISTEN) == MODE_LISTEN){ 
      //Serial.println(" - P2P TARGET MODE: Activated from remote Initiator");
-     Serial.println("Escuchando ");
+     Serial.println("Listening ");
      RGB(255,0,0);
     }
     else{
      //Serial.println(" - P2P INITIATOR MODE: Remote Target activated");
-     Serial.println("Hablando ");
+     Serial.println("Talking ");
      RGB(0,0,255);
     }
    /* Process with SNEP for NDEF exchange */
