@@ -30,7 +30,7 @@ NFC USB Dongle features a SAMD21 MCU which works in conjunction with the PN7150.
 
 NFC is designed to be intuitive for users. The Communication between two devices is established in the simplest way possible — by bringing them close to each other. NFC frontend can operate in three distinct modes:
 
-More examples and info in our (Wiki)[https://github.com/ElectronicCats/HunterCatNFC/wiki]
+More examples and info in our [Wiki](https://github.com/ElectronicCats/HunterCatNFC/wiki)
 
 ## Characteristics:
 - Procesador Cortex M0+
