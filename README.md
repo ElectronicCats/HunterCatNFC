@@ -1,7 +1,5 @@
 # Huntercat NFC
 
-**This a Pre-Order Product, shipping 4 April**
-
 <a href="https://electroniccats.com/store/hunter-cat-nfc//">
   <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" height="104" />
 </a>
