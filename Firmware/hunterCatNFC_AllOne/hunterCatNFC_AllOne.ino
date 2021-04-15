@@ -59,19 +59,24 @@ void resetMode() { //Reset the configuration mode after each reading
   Serial.println("Reset...");
   if (nfc.connectNCI()) { //Wake up the board
     Serial.println("Error while setting up the mode, check connections!");
-    while (1);
+    while (1){
+      blink(LED_BUILTIN, 200, 3);
+    }
   }
 
   if (nfc.ConfigureSettings()) {
     Serial.println("The Configure Settings failed!");
-    while (1);
+    while (1){
+      blink(LED_BUILTIN, 200, 5);
+    }
   }
 
   if (nfc.ConfigMode(mode)) { //Set up the configuration mode
     Serial.println("The Configure Mode failed!!");
-    while (1);
+    while (1){
+      blink(LED_BUILTIN, 200, 10);
+    }
   }
-
   nfc.StartDiscovery(mode); //NCI Discovery mode
 }
 
