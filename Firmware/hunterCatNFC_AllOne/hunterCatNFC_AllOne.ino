@@ -457,7 +457,7 @@ void mifarevisa() {
 
 void setup() {
   Serial.begin(9600);
-  while (!Serial);
+  //while (!Serial);
   Serial.println("Detecting NFC readers with PN7150");
 
   pinMode(LED_BUILTIN, OUTPUT);
@@ -491,31 +491,6 @@ void setup() {
 // to read Mifare card: mifarevisa()
 
 void loop() {
-  if (digitalRead(BUTTON_0) == 0) {
-    // to detect card readers: nfcdetectreader()
-    Serial.println("nfcdetectreader");
-    RGB(255, 255, 255); //White?
-    nfcdetectreader();
-    RGB(0, 0, 0); //Green
-    delay(100);
-  }
-  if (digitalRead(BUTTON_1) == 0) {
-    // to read visa card: mifarevisa()
-    RGB(0, 0, 255); //Blue
-    Serial.println("mifarevisa");
-    mifarevisa();
-    RGB(0, 0, 0); //Green
-    delay(100);
-  }
-  if (digitalRead(BUTTON_2) == 0) {
-    // to emulate Visa MSD: visamsd()
-    Serial.println("visamsd");
-    RGB(0, 255, 0); //Green
-    visamsd();
-    RGB(0, 0, 0);
-    delay(100);
-  }
-
   int analog = analogRead(A0);
   int voltagepercent = map(analog, 0, 645, 0, 100 );
 
@@ -526,5 +501,43 @@ void loop() {
     RGB(0, 0, 0);
     delay(100);
   }
-  blink(LED_BUILTIN, 10, 1);
+
+  RGB(0,240,250); //BLUE
+  delay(150);
+  RGB(0, 0, 0);
+  delay(150);
+  
+  if (digitalRead(BUTTON_0) == 0) {
+    // to detect card readers: nfcdetectreader()
+    Serial.println("nfcdetectreader");
+    RGB(255, 255, 255); //White?
+    nfcdetectreader();
+    delay(100);
+    RGB(0,255,0);
+    delay(600);
+    RGB(0, 0, 0); //Green
+    delay(100);
+  }
+  if (digitalRead(BUTTON_1) == 0) {
+    // to read visa card: mifarevisa()
+    RGB(0, 0, 255); //Blue
+    Serial.println("mifarevisa");
+    mifarevisa();
+    delay(100);
+    RGB(0,255,0);
+    delay(600);
+    RGB(0, 0, 0); //Green
+    delay(100);
+  }
+  if (digitalRead(BUTTON_2) == 0) {
+    // to emulate Visa MSD: visamsd()
+    Serial.println("visamsd");
+    RGB(10,240,70); //Green
+    visamsd();
+    delay(100);
+    RGB(0,255,0);
+    delay(600);
+    RGB(0, 0, 0); //Green
+    delay(100);
+  }
 }
