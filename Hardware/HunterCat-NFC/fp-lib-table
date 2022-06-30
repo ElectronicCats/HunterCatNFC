@@ -1,4 +1,3 @@
 (fp_lib_table
-  (lib (name hunter-cat-nfc)(type KiCad)(uri ${KIPRJMOD}/library/hunter-cat-nfc.pretty)(options "")(descr ""))
-  (lib (name USON)(type KiCad)(uri "C:/Users/Diego Armadillo/Desktop/Documentos EC/ElectronicCats-KiCad-Libraries/Footprints/USON")(options "")(descr ""))
+  (lib (name "hunter-cat-nfc")(type "KiCad")(uri "${KIPRJMOD}/library/hunter-cat-nfc.pretty")(options "")(descr ""))
 )
