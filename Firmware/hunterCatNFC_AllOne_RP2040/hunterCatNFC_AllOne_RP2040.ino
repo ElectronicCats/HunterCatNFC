@@ -18,22 +18,22 @@
 
 //#define DEBUG
 
-#define PN7150_IRQ   (6)
-#define PN7150_VEN   (5)
+#define PN7150_IRQ   (18)
+#define PN7150_VEN   (17)
 #define PN7150_ADDR  (0x28)
 
-#define PIN_LED  2
-#define PIN_LED2 3
-#define PIN_LED3 4
+#define PIN_LED  8
+#define PIN_LED2 9
+#define PIN_LED3 10
 
-#define BUTTON_0 8
-#define BUTTON_1 9
-#define BUTTON_2 7
+#define BUTTON_0 19
+#define BUTTON_1 20
+#define BUTTON_2 21
   
 
 #define KEY_MFC      0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF        // Default Mifare Classic key
 
-Electroniccats_PN7150 nfc(PN7150_IRQ, PN7150_VEN, PN7150_ADDR); // creates a global NFC device interface object, attached to pins 7 (IRQ) and 8 (VEN) and using the default I2C address 0x28
+Electroniccats_PN7150 nfc(PN7150_IRQ, PN7150_VEN, PN7150_ADDR); // creates a global NFC device interface object, attached to pins 18 (IRQ) and 17 (VEN) and using the default I2C address 0x28
 RfIntf_t RfInterface;
 
 uint8_t mode = 2;                                                  // modes: 1 = Reader/ Writer, 2 = Emulation
@@ -485,7 +485,7 @@ void setup() {
     delay(500);
 
   resetMode();
-  Serial.println("HunterCat NFC v1.3");
+  Serial.println("HunterCat NFC v2.0");
 }
 
 // to detect card readers: nfcdetectreader()
