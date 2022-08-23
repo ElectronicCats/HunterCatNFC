@@ -22,7 +22,7 @@ Detect hidden readers seeking to read your cards without authorization for cloni
 4.- Approach the reader, the huntercat NFC LEDs should light up indicating if an NFC reader was detected.
 5.- If it does not turn on and the LED stays on, it is not near an NFC reader. 
 
-## HOW DOES IT WORK? 
+## How does it work? 
 
 Hunter Cat NFC can be set to behave either as an NFC reader a tag or to establish a two-way connection with another NFC device. 
 
@@ -66,6 +66,10 @@ Peer-to-peer mode establishes a two-way communication channel between a pair of 
 - ISO/IEC 15693/ICODE VCD mode 
 - Includes NXP ISO/IEC14443-A and Innovatron ISO/IEC14443-B intellectual property licensing rights
 
+##  Wiki and Getting Started
+[Getting Started in our Wiki](https://github.com/ElectronicCats/HunterCatNFC/wiki)
+
+<img src="https://raw.githubusercontent.com/wiki/ElectronicCats/HunterCatNFC/assets/Hunter_Cat_NFC.jpg" />
 
 ## License
 
