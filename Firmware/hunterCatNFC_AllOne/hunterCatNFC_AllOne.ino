@@ -58,6 +58,9 @@ uint8_t mode = 2;                                                  // modes: 1 =
 
 unsigned char STATUSOK[] = {0x90, 0x00}, Cmd[256], CmdSize;
 
+uint8_t uidcf[20] = {0};
+uint8_t uidlen = 0;
+
 // Token = data to be use it as track 2
 // 4412345605781234 = card number in this case
 uint8_t token[19] = {0x44, 0x12, 0x34, 0x56, 0x05 , 0x78, 0x12, 0x34, 0xd1, 0x71, 0x12, 0x01, 0x00, 0x00, 0x03, 0x00, 0x00, 0x99, 0x1f};
@@ -82,8 +85,10 @@ void resetMode() { //Reset the configuration mode after each reading
     Serial.println("Error while setting up the mode, check connections!");
     while (1);
   }
+  
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-  if (nfc.ConfigureSettings()) {
+  if (nfc.ConfigureSettings(uidcf, uidlen)) {
     Serial.println("The Configure Settings failed!");
     while (1);
   }
@@ -396,6 +401,17 @@ void detectcard() {
         Serial.print("\tNFCID = ");
         printBuf(RfInterface.Info.NFC_APP.NfcId, RfInterface.Info.NFC_APP.NfcIdLen);
 
+        uidcf[2] = 7 + RfInterface.Info.NFC_APP.NfcIdLen;
+        uidcf[3] = 0x02;
+        uidcf[8] = 0x33;
+        uidcf[9] = RfInterface.Info.NFC_APP.NfcIdLen;
+
+        uidlen = RfInterface.Info.NFC_APP.NfcIdLen;
+        
+        memcpy(&uidcf[10], RfInterface.Info.NFC_APP.NfcId, RfInterface.Info.NFC_APP.NfcIdLen);
+
+        //uidcf ready to fill CORE_CONF
+
         if (RfInterface.Info.NFC_APP.NfcIdLen != 4) {
 
           Serial.println("Ooops ... this doesn't seem to be a Mifare Classic card!");
@@ -505,6 +521,7 @@ void setup() {
   Serial.print("Flash chip JEDEC ID: 0x"); Serial.println(flash.getJEDECID(), HEX);
 #endif
   resetMode();
+  uidcf[0] = NULL;
   Serial.println("HunterCat NFC");
 }
 
@@ -546,6 +563,9 @@ void loop() {
     RGB(0, 0, 255); //Blue
     Serial.println("mifarevisa");
     mifarevisa();
+
+
+    
     delay(100);
     RGB(0,255,0);
     delay(600);
