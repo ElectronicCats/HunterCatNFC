@@ -58,7 +58,10 @@ uint8_t mode = 2;                                                  // modes: 1 =
 
 unsigned char STATUSOK[] = {0x90, 0x00}, Cmd[256], CmdSize;
 
-uint8_t uidcf[20] = {0};
+uint8_t uidcf[20] = {        
+        0x20, 0x02, 0x05, 0x01, /* CORE_SET_CONFIG_CMD */
+        0x00, 0x02, 0x00, 0x01  /* TOTAL_DURATION */
+        };
 uint8_t uidlen = 0;
 
 // Token = data to be use it as track 2
@@ -352,7 +355,9 @@ void readingmifare(void) {
     delay(50);
   }
   
+  Serial.println("UID clone ready");
   Serial.println("Finish Dump Card...");
+  
 }
 
 //Emulate a Visa MSD
@@ -397,8 +402,10 @@ void detectcard() {
         sprintf(tmp, "0x%.2X", RfInterface.Info.NFC_APP.SensRes[0]);
         Serial.print(tmp); Serial.print(" ");
         sprintf(tmp, "0x%.2X", RfInterface.Info.NFC_APP.SensRes[1]);
+        
         Serial.print(tmp); Serial.println(" ");
         Serial.print("\tNFCID = ");
+       
         printBuf(RfInterface.Info.NFC_APP.NfcId, RfInterface.Info.NFC_APP.NfcIdLen);
 
         uidcf[2] = 7 + RfInterface.Info.NFC_APP.NfcIdLen;
@@ -501,7 +508,7 @@ void setup() {
 
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(PIN_LED2, OUTPUT);
-  pinMode(PIN_LED2, OUTPUT);
+  pinMode(PIN_LED3, OUTPUT);
 
   pinMode(BUTTON_0, INPUT_PULLUP);
   pinMode(BUTTON_1, INPUT_PULLUP);
@@ -509,7 +516,7 @@ void setup() {
 
   digitalWrite(LED_BUILTIN, LOW);
   digitalWrite(PIN_LED2, LOW);
-  digitalWrite(PIN_LED2, LOW);
+  digitalWrite(PIN_LED3, LOW);
 #ifdef ARDUINO_ARCH_SAMD
   // Initialize flash library and check its chip ID.
   if (!flash.begin()) {
@@ -521,7 +528,7 @@ void setup() {
   Serial.print("Flash chip JEDEC ID: 0x"); Serial.println(flash.getJEDECID(), HEX);
 #endif
   resetMode();
-  uidcf[0] = NULL;
+  //uidcf[0] = 0;
   Serial.println("HunterCat NFC");
 }
 
@@ -564,8 +571,6 @@ void loop() {
     Serial.println("mifarevisa");
     mifarevisa();
 
-
-    
     delay(100);
     RGB(0,255,0);
     delay(600);
