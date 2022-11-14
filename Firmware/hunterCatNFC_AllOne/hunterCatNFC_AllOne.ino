@@ -1,5 +1,5 @@
 /**
-   Example to detect NFC readers, read a Mifare Card, read a Visa card
+   Example to detect NFC readers, read and clone UID a Mifare Card, read a Visa card
    and emulate a Visa MSD card.
 
    Authors:
@@ -492,7 +492,7 @@ void nfcdetectreader() {
 }
 
 //To read Mifare and Visa
-void mifarevisa() {
+void mifare() {
   mode = 1;
   resetMode();
   detectcard();
@@ -528,14 +528,12 @@ void setup() {
   Serial.print("Flash chip JEDEC ID: 0x"); Serial.println(flash.getJEDECID(), HEX);
 #endif
   resetMode();
-  //uidcf[0] = 0;
   Serial.println("HunterCat NFC");
 }
 
 // to detect card readers: nfcdetectreader()
-// to read visa card: mifarevisa()
 // to emulate Visa MSD: visamsd()
-// to read Mifare card: mifarevisa()
+// to read Mifare card: mifare()
 
 void loop() {
   int analog = analogRead(A0);
@@ -548,44 +546,27 @@ void loop() {
     RGB(0, 0, 0);
     delay(100);
   }
-
-  RGB(0,240,250); //BLUE
-  delay(150);
-  RGB(0, 0, 0);
-  delay(150);
   
   if (digitalRead(BUTTON_0) == 0) {
     // to detect card readers: nfcdetectreader()
     Serial.println("nfcdetectreader");
-    RGB(255, 255, 255); //White?
+    RGB(255, 0, 0);
     nfcdetectreader();
-    delay(100);
-    RGB(0,255,0);
-    delay(600);
-    RGB(0, 0, 0); //Green
-    delay(100);
   }
   if (digitalRead(BUTTON_1) == 0) {
-    // to read visa card: mifarevisa()
+    // to read mifare card and clone UID: mifare()
     RGB(0, 0, 255); //Blue
-    Serial.println("mifarevisa");
-    mifarevisa();
-
-    delay(100);
-    RGB(0,255,0);
-    delay(600);
-    RGB(0, 0, 0); //Green
-    delay(100);
+    Serial.println("mifare");
+    mifare();
   }
   if (digitalRead(BUTTON_2) == 0) {
     // to emulate Visa MSD: visamsd()
     Serial.println("visamsd");
     RGB(10,240,70); //Green
     visamsd();
-    delay(100);
-    RGB(0,255,0);
-    delay(600);
-    RGB(0, 0, 0); //Green
-    delay(100);
   }
+  RGB(0,240,250); //BLUE
+  delay(150);
+  RGB(0, 0, 0);
+  delay(150);
 }
