@@ -1,5 +1,5 @@
 /**
-   Example to detect NFC readers, read a Mifare Card, read a Visa card
+   Example to detect NFC readers, read and clone UID a Mifare Card, read a Visa card
    and emulate a Visa MSD card.
 
    Authors:
@@ -58,6 +58,12 @@ uint8_t mode = 2;                                                  // modes: 1 =
 
 unsigned char STATUSOK[] = {0x90, 0x00}, Cmd[256], CmdSize;
 
+uint8_t uidcf[20] = {        
+        0x20, 0x02, 0x05, 0x01, /* CORE_SET_CONFIG_CMD */
+        0x00, 0x02, 0x00, 0x01  /* TOTAL_DURATION */
+        };
+uint8_t uidlen = 0;
+
 // Token = data to be use it as track 2
 // 4412345605781234 = card number in this case
 uint8_t token[19] = {0x44, 0x12, 0x34, 0x56, 0x05 , 0x78, 0x12, 0x34, 0xd1, 0x71, 0x12, 0x01, 0x00, 0x00, 0x03, 0x00, 0x00, 0x99, 0x1f};
@@ -82,8 +88,10 @@ void resetMode() { //Reset the configuration mode after each reading
     Serial.println("Error while setting up the mode, check connections!");
     while (1);
   }
+  
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-  if (nfc.ConfigureSettings()) {
+  if (nfc.ConfigureSettings(uidcf, uidlen)) {
     Serial.println("The Configure Settings failed!");
     while (1);
   }
@@ -347,7 +355,9 @@ void readingmifare(void) {
     delay(50);
   }
   
+  Serial.println("UID clone ready");
   Serial.println("Finish Dump Card...");
+  
 }
 
 //Emulate a Visa MSD
@@ -392,9 +402,22 @@ void detectcard() {
         sprintf(tmp, "0x%.2X", RfInterface.Info.NFC_APP.SensRes[0]);
         Serial.print(tmp); Serial.print(" ");
         sprintf(tmp, "0x%.2X", RfInterface.Info.NFC_APP.SensRes[1]);
+        
         Serial.print(tmp); Serial.println(" ");
         Serial.print("\tNFCID = ");
+       
         printBuf(RfInterface.Info.NFC_APP.NfcId, RfInterface.Info.NFC_APP.NfcIdLen);
+
+        uidcf[2] = 7 + RfInterface.Info.NFC_APP.NfcIdLen;
+        uidcf[3] = 0x02;
+        uidcf[8] = 0x33;
+        uidcf[9] = RfInterface.Info.NFC_APP.NfcIdLen;
+
+        uidlen = RfInterface.Info.NFC_APP.NfcIdLen;
+        
+        memcpy(&uidcf[10], RfInterface.Info.NFC_APP.NfcId, RfInterface.Info.NFC_APP.NfcIdLen);
+
+        //uidcf ready to fill CORE_CONF
 
         if (RfInterface.Info.NFC_APP.NfcIdLen != 4) {
 
@@ -469,7 +492,7 @@ void nfcdetectreader() {
 }
 
 //To read Mifare and Visa
-void mifarevisa() {
+void mifare() {
   mode = 1;
   resetMode();
   detectcard();
@@ -485,7 +508,7 @@ void setup() {
 
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(PIN_LED2, OUTPUT);
-  pinMode(PIN_LED2, OUTPUT);
+  pinMode(PIN_LED3, OUTPUT);
 
   pinMode(BUTTON_0, INPUT_PULLUP);
   pinMode(BUTTON_1, INPUT_PULLUP);
@@ -493,7 +516,7 @@ void setup() {
 
   digitalWrite(LED_BUILTIN, LOW);
   digitalWrite(PIN_LED2, LOW);
-  digitalWrite(PIN_LED2, LOW);
+  digitalWrite(PIN_LED3, LOW);
 #ifdef ARDUINO_ARCH_SAMD
   // Initialize flash library and check its chip ID.
   if (!flash.begin()) {
@@ -509,9 +532,8 @@ void setup() {
 }
 
 // to detect card readers: nfcdetectreader()
-// to read visa card: mifarevisa()
 // to emulate Visa MSD: visamsd()
-// to read Mifare card: mifarevisa()
+// to read Mifare card: mifare()
 
 void loop() {
   int analog = analogRead(A0);
@@ -524,43 +546,27 @@ void loop() {
     RGB(0, 0, 0);
     delay(100);
   }
-
-  RGB(0,240,250); //BLUE
-  delay(150);
-  RGB(0, 0, 0);
-  delay(150);
   
   if (digitalRead(BUTTON_0) == 0) {
     // to detect card readers: nfcdetectreader()
     Serial.println("nfcdetectreader");
-    RGB(255, 255, 255); //White?
+    RGB(255, 0, 0);
     nfcdetectreader();
-    delay(100);
-    RGB(0,255,0);
-    delay(600);
-    RGB(0, 0, 0); //Green
-    delay(100);
   }
   if (digitalRead(BUTTON_1) == 0) {
-    // to read visa card: mifarevisa()
+    // to read mifare card and clone UID: mifare()
     RGB(0, 0, 255); //Blue
-    Serial.println("mifarevisa");
-    mifarevisa();
-    delay(100);
-    RGB(0,255,0);
-    delay(600);
-    RGB(0, 0, 0); //Green
-    delay(100);
+    Serial.println("mifare");
+    mifare();
   }
   if (digitalRead(BUTTON_2) == 0) {
     // to emulate Visa MSD: visamsd()
     Serial.println("visamsd");
     RGB(10,240,70); //Green
     visamsd();
-    delay(100);
-    RGB(0,255,0);
-    delay(600);
-    RGB(0, 0, 0); //Green
-    delay(100);
   }
+  RGB(0,240,250); //BLUE
+  delay(150);
+  RGB(0, 0, 0);
+  delay(150);
 }
