@@ -1,0 +1,2262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\DELL\OneDrive\Documentos\GitHub\HunterCatNFC\Hardware\HunterCat-NFC\HunterCat-NFC.kicad_sch</source>
+    <date>23/11/2022 03:29:52 p. m.</date>
+    <tool>Eeschema (6.0.4)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Hunter Cat NFC</title>
+        <company>Electronic Cats</company>
+        <rev>2.0</rev>
+        <date>2022-06-28</date>
+        <source>HunterCat-NFC.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="Eduardo Contreras"/>
+        <comment number="4" value="Andres Sabas"/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>27pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/New-Arrivals_Chinocera-HGC0402G0220J500NTEJ_C482483.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>697602a5-614a-4354-9314-267df5fc4571</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_muRata_GRM155R60J105KE19D_1uF-105-10-6-3V_C15684.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47aec22b-82e9-4b91-989d-e048280cce6f</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>10pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">885012007076</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="885012007076"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e43076d</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>10pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">885012007076</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="885012007076"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e430165</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C26413</field>
+        <field name="manf#">885012207078</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="885012207078"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C26413"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e447d43</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C26413</field>
+        <field name="manf#">885012207078</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="885012207078"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C26413"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e4376b4</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C387984</field>
+        <field name="manf#">885012207072</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="885012207072"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C387984"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e437b68</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C26413</field>
+        <field name="manf#">885012207078</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="885012207078"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C26413"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e436916</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C387984</field>
+        <field name="manf#">885012207072</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="885012207072"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C387984"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e4408ca</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>1nF/16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">CC0201JRX7R7BB102</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="CC0201JRX7R7BB102"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e4626c2</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>1nF/16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">CC0201JRX7R7BB102</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="CC0201JRX7R7BB102"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e465d74</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>680pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">885012206107</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="885012206107"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e463e3d</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>680pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">885012206107</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="885012206107"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e464863</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>100pF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">06035A101JAT4A</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="06035A101JAT4A"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e463268</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>27pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/New-Arrivals_Chinocera-HGC0402G0220J500NTEJ_C482483.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9942ec2f-039f-4d83-a339-abe9986b4664</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C326057</field>
+        <field name="manf#">C0805C106K9PACTU</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="C0805C106K9PACTU"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C326057"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e70d49c</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402ZRY5V7BB104_C106209.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f6181b4a-72b0-4242-b99a-7ccab2dc0493</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>100pF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">06035A101JAT4A</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="06035A101JAT4A"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e46590d</tstamps>
+    </comp>
+    <comp ref="C19">
+      <value>120pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">C0603C121J5GAC</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="C0603C121J5GAC"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e464034</tstamps>
+    </comp>
+    <comp ref="C20">
+      <value>120pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">C0603C121J5GAC</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="C0603C121J5GAC"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e464a90</tstamps>
+    </comp>
+    <comp ref="C21">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402ZRY5V7BB104_C106209.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2fd3f025-e878-434c-b244-a428eea40316</tstamps>
+    </comp>
+    <comp ref="C22">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_muRata_GRM155R60J105KE19D_1uF-105-10-6-3V_C15684.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d8623b90-5df2-4e9b-90e7-62c11b30e5ed</tstamps>
+    </comp>
+    <comp ref="C23">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C326057</field>
+        <field name="manf#">C0805C106K9PACTU</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="C0805C106K9PACTU"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C326057"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e735610</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C326057</field>
+        <field name="manf#">C0805C106K9PACTU</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="manf#" value="C0805C106K9PACTU"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C326057"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e7362a4</tstamps>
+    </comp>
+    <comp ref="C25">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402ZRY5V7BB104_C106209.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>66d2f3cc-8a8f-4195-a375-78e0778f2b1b</tstamps>
+    </comp>
+    <comp ref="C26">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402ZRY5V7BB104_C106209.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2959106f-ba2e-4dca-9911-05fe8ac11cd1</tstamps>
+    </comp>
+    <comp ref="C27">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402ZRY5V7BB104_C106209.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca8536ba-b4ba-40a2-9889-dc4fa9f087de</tstamps>
+    </comp>
+    <comp ref="C28">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402ZRY5V7BB104_C106209.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c68d9a05-d48a-433e-894d-8be5c2c499a9</tstamps>
+    </comp>
+    <comp ref="C29">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402ZRY5V7BB104_C106209.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4aee0067-e389-41e2-b2dc-5a687655c0ac</tstamps>
+    </comp>
+    <comp ref="C30">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402ZRY5V7BB104_C106209.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>305a7ed3-3d01-4d2a-835c-b7b8a0898683</tstamps>
+    </comp>
+    <comp ref="C31">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402ZRY5V7BB104_C106209.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>561a9777-3ee1-4e18-9853-7c8cfa786cbd</tstamps>
+    </comp>
+    <comp ref="C32">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402ZRY5V7BB104_C106209.html</datasheet>
+      <fields>
+        <field name="manf#">EC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value="EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c37cb6c3-6fec-4395-b191-aee0441c0811</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC#">C130114</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C130114"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e4bb3c2</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC#">C205441</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C205441"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e6e6bf6</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC#">C205442</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C205442"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e770c69</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC#">C84261</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C84261"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e793493</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>MBR120</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.onsemi.com/pub_link/Collateral/MBR340-D.PDF</datasheet>
+      <fields>
+        <field name="LCSC#">C723989</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Diode" part="MBR340" description="40V 3A Schottky Barrier Rectifier Diode, DO-201AD"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="LCSC#" value="C723989"/>
+      <property name="manf#" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f318682</tstamps>
+    </comp>
+    <comp ref="F1">
+      <value>0.5A</value>
+      <footprint>Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">MFU0805FF00500P100</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="Device" part="Fuse_Small" description="Fuse, small symbol"/>
+      <property name="manf#" value="MFU0805FF00500P100"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="LCSC#" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e5f2532</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">-</field>
+        <field name="provedor">-</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="LCSC#" value="-"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8f3f2e</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">-</field>
+        <field name="provedor">-</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="LCSC#" value="-"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8f32b1</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">-</field>
+        <field name="provedor">-</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="LCSC#" value="-"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8f3581</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">-</field>
+        <field name="provedor">-</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="LCSC#" value="-"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8f3b0a</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Battery</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Vertical_SMD</footprint>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">-</field>
+        <field name="provedor">-</field>
+      </fields>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="LCSC#" value="-"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e75338c</tstamps>
+    </comp>
+    <comp ref="JP1">
+      <value>BOOT</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="Jumper_2_Open" description="Jumper, 2-pole, open"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e3a89169-8d4b-43e7-9eaa-7a8de5f74c05</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>160nH</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC#">C434822</field>
+        <field name="manf#">MLJ1608WR16JT000</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
+      <property name="manf#" value="MLJ1608WR16JT000"/>
+      <property name="LCSC#" value="C434822"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e466aec</tstamps>
+    </comp>
+    <comp ref="L2">
+      <value>160nH</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC#">C434822</field>
+        <field name="manf#">MLJ1608WR16JT000</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
+      <property name="manf#" value="MLJ1608WR16JT000"/>
+      <property name="LCSC#" value="C434822"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e466375</tstamps>
+    </comp>
+    <comp ref="L3">
+      <value>L</value>
+      <footprint>hunter-cat-nfc:NFC-antenna30.4x30.4mm</footprint>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">-</field>
+        <field name="provedor">-</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="LCSC#" value="-"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e588a20</tstamps>
+    </comp>
+    <comp ref="P1">
+      <value>USB_C_Plug_USB2.0</value>
+      <footprint>Connectors:C393939</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <fields>
+        <field name="LCSC#">C393939</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="HunterCat-NFC-rescue" part="USB_C_Plug_USB2.0-Connector" description=""/>
+      <property name="manf#" value="-"/>
+      <property name="LCSC#" value="C393939"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e5b360d</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>DMG3415U-7</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.mouser.mx/datasheet/2/115/ds31735-64958.pdf</datasheet>
+      <fields>
+        <field name="LCSC#">C96616</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="Q_PMOS_GSD" description="P-MOSFET transistor, gate/source/drain"/>
+      <property name="LCSC#" value="C96616"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005fe5bd93</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C15401</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="-"/>
+      <property name="LCSC#" value="C15401"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e48dc0b</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C15401</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="-"/>
+      <property name="LCSC#" value="C15401"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e48e267</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C15458</field>
+        <field name="manf#">ERJ6RBD1003V</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="ERJ6RBD1003V"/>
+      <property name="LCSC#" value="C15458"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e54e4e0</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C517454</field>
+        <field name="manf#">CRCW08051K50FKEAC</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="CRCW08051K50FKEAC"/>
+      <property name="LCSC#" value="C517454"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e4bbc69</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C15458</field>
+        <field name="manf#">ERJ6RBD1003V</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="ERJ6RBD1003V"/>
+      <property name="LCSC#" value="C15458"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e539cd3</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C15458</field>
+        <field name="manf#">ERJ6RBD1003V</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="ERJ6RBD1003V"/>
+      <property name="LCSC#" value="C15458"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f28268e</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-Walsin-Tech-Corp-1KR-102-5_C384390.html</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f54447e8-c9dd-474c-b6b8-30fc59d19972</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>5k1</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C131715</field>
+        <field name="manf#">CR0805-FX-5101ELF</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="CR0805-FX-5101ELF"/>
+      <property name="LCSC#" value="C131715"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e5fe43e</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>5k1</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C131715</field>
+        <field name="manf#">CR0805-FX-5101ELF</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="CR0805-FX-5101ELF"/>
+      <property name="LCSC#" value="C131715"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e5fef20</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C116693</field>
+        <field name="manf#">ERJ-3GEYJ472V</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="ERJ-3GEYJ472V"/>
+      <property name="LCSC#" value="C116693"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e6acd31</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>2k2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C217937</field>
+        <field name="manf#">RC0603JR-072K2L</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="RC0603JR-072K2L"/>
+      <property name="LCSC#" value="C217937"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e4671ec</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C517454</field>
+        <field name="manf#">CRCW08051K50FKEAC</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="CRCW08051K50FKEAC"/>
+      <property name="LCSC#" value="C517454"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e6e87b2</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>2k2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C217937</field>
+        <field name="manf#">RC0603JR-072K2L</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="RC0603JR-072K2L"/>
+      <property name="LCSC#" value="C217937"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e4679d4</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>3.24R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">RC0603FR-073R4L</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="RC0603FR-073R4L"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e468122</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>3.24R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="manf#">RC0603FR-073R4L</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="RC0603FR-073R4L"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e467e45</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C517454</field>
+        <field name="manf#">CRCW08051K50FKEAC</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="CRCW08051K50FKEAC"/>
+      <property name="LCSC#" value="C517454"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e770c6f</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C517454</field>
+        <field name="manf#">CRCW08051K50FKEAC</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="CRCW08051K50FKEAC"/>
+      <property name="LCSC#" value="C517454"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e793499</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C15458</field>
+        <field name="manf#">ERJ6RBD1003V</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="ERJ6RBD1003V"/>
+      <property name="LCSC#" value="C15458"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e6bd0a2</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC#">C15458</field>
+        <field name="manf#">ERJ6RBD1003V</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="manf#" value="ERJ6RBD1003V"/>
+      <property name="LCSC#" value="C15458"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e6bdb90</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>27</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-Walsin-Tech-Corp-27R-270-5_C384351.html</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9ba5e03b-a4bb-45bf-93bb-8b74b8aee1bb</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>27</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-Walsin-Tech-Corp-27R-270-5_C384351.html</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92b1be5a-6350-4f34-b626-d98786b29e2f</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FH-Guangdong-Fenghua-Advanced-Tech-RC-02W103JT_C140214.html</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC#" value=""/>
+      <property name="manf#" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd6c7b8a-0444-41a3-91b0-e82a5bffaf34</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>RESET</value>
+      <footprint>Button_Switch_SMD:SW_SPST_TL3342</footprint>
+      <fields>
+        <field name="LCSC#">C318890</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="manf#" value="-"/>
+      <property name="LCSC#" value="C318890"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e4ba999</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>GPIO</value>
+      <footprint>Button_Switch_SMD:SW_SPST_TL3342</footprint>
+      <fields>
+        <field name="LCSC#">C318890</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="manf#" value="-"/>
+      <property name="LCSC#" value="C318890"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f214f20</tstamps>
+    </comp>
+    <comp ref="SW3">
+      <value>GPIO1</value>
+      <footprint>Button_Switch_SMD:SW_SPST_TL3342</footprint>
+      <fields>
+        <field name="LCSC#">C318890</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="manf#" value="-"/>
+      <property name="LCSC#" value="C318890"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f45f273</tstamps>
+    </comp>
+    <comp ref="SW4">
+      <value>GPIO2</value>
+      <footprint>Button_Switch_SMD:SW_SPST_TL3342</footprint>
+      <fields>
+        <field name="LCSC#">C318890</field>
+        <field name="manf#">-</field>
+        <field name="provedor">LCSC</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="manf#" value="-"/>
+      <property name="LCSC#" value="C318890"/>
+      <property name="provedor" value="LCSC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f49a3f4</tstamps>
+    </comp>
+    <comp ref="SW5">
+      <value>ON</value>
+      <footprint>hunter-cat-nfc:Micro_interruptor_SPDT</footprint>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">-</field>
+        <field name="provedor">-</field>
+      </fields>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <property name="LCSC#" value="-"/>
+      <property name="manf#" value="-"/>
+      <property name="provedor" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f926b9c</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>RP2040</value>
+      <footprint>RP2040:RP2040-QFN-56</footprint>
+      <libsource lib="PicoWAN-rescue" part="RP2040-MCU_RaspberryPi_and_Boards-PicoWAN-rescue-PicoWAN-rescue" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aac5ff4a-0e4e-4abd-950c-7111c38446c9</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>PN7150B0HN_C11002E-PN7150B0HN_C11002E</value>
+      <footprint>Package_DFN_QFN:QFN-40-1EP_6x6mm_P0.5mm_EP4.6x4.6mm</footprint>
+      <datasheet>https://www.mouser.mx/datasheet/2/302/PN7150-1386066.pdf</datasheet>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">PN7150B0HN/C11002</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="hunter-cat-nfc" part="PN7150B0HN_C11002E-PN7150B0HN_C11002E" description=""/>
+      <property name="manf#" value="PN7150B0HN/C11002"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="LCSC#" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e818ef3</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>MCP73831-3-OT</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</datasheet>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">MCP73831-3-OT</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="Battery_Management" part="MCP73831-3-OT" description="Single cell, Li-Ion/Li-Po charge management controller, 4.35V, Tri-State Status Output, in SOT23-5 package"/>
+      <property name="manf#" value="MCP73831-3-OT"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="LCSC#" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e64b2b6</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>AP2112K-3.3</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/AP2112.pdf</datasheet>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">AP2112K-3.3</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="HunterCat-NFC-rescue" part="AP2112K-3.3-Regulator_Linear" description=""/>
+      <property name="manf#" value="AP2112K-3.3"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="LCSC#" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e451f7b</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>W25Q16JV</value>
+      <footprint>hunter-cat-nfc:W25Q16JVUUIQ</footprint>
+      <datasheet>https://www.mouser.mx/ProductDetail/Winbond/W25Q16JVUXIQ-TR/?qs=%2Fha2pyFaduiS2uR9HYi5HkA%252B2tQKEnSsT8O6AY%252BoxISO7oyUQiPPXw%3D%3D</datasheet>
+      <fields>
+        <field name="manf#">W25Q16JVUUIQ</field>
+      </fields>
+      <libsource lib="Memory_Flash" part="W25Q32JVZP" description="32Mb Serial Flash Memory, Standard/Dual/Quad SPI, DFN-8"/>
+      <property name="manf#" value="W25Q16JVUUIQ"/>
+      <property name="LCSC#" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>89bcaf8f-d8fc-4b7f-a24f-bc26f7988665</tstamps>
+    </comp>
+    <comp ref="Y1">
+      <value>27.12Mhz</value>
+      <footprint>Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm</footprint>
+      <datasheet>https://www.mouser.mx/datasheet/2/122/ecx_1637-12794.pdf</datasheet>
+      <fields>
+        <field name="LCSC#">-</field>
+        <field name="manf#">520-271.2-6-37-JTNT</field>
+        <field name="provedor">MOUSER</field>
+      </fields>
+      <libsource lib="Device" part="Crystal_GND24_Small" description="Four pin crystal, GND on pins 2 and 4, small symbol"/>
+      <property name="manf#" value="520-271.2-6-37-JTNT"/>
+      <property name="provedor" value="MOUSER"/>
+      <property name="LCSC#" value="-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005e430c46</tstamps>
+    </comp>
+    <comp ref="Y2">
+      <value>12Mhz</value>
+      <footprint>Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm</footprint>
+      <datasheet>https://lcsc.com/product-detail/SMD-Crystal-Resonators_JWT-CM4012M00020T8188026_C709001.html</datasheet>
+      <fields>
+        <field name="LCSC#">C709001</field>
+        <field name="manf#">CM4012M00020T8188026</field>
+      </fields>
+      <libsource lib="Device" part="Crystal_GND2" description="Three pin crystal, GND on pin 2"/>
+      <property name="manf#" value="CM4012M00020T8188026"/>
+      <property name="LCSC#" value="C709001"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="HunterCat-NFC.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>947e0fb0-71bb-446e-89d0-9868656d4943</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Battery_Management" part="MCP73831-3-OT">
+      <description>Single cell, Li-Ion/Li-Po charge management controller, 4.35V, Tri-State Status Output, in SOT23-5 package</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP73831-3-OT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="STAT" type="output"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="VBAT" type="power_out"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="PROG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal_GND2">
+      <description>Three pin crystal, GND on pin 2</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_GND2</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal_GND24_Small">
+      <description>Four pin crystal, GND on pins 2 and 4, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_GND24_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse_Small">
+      <description>Fuse, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L_Small">
+      <description>Inductor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_PMOS_GSD">
+      <description>P-MOSFET transistor, gate/source/drain</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PMOS_GSD</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="MBR340">
+      <description>40V 3A Schottky Barrier Rectifier Diode, DO-201AD</description>
+      <docs>http://www.onsemi.com/pub_link/Collateral/MBR340-D.PDF</docs>
+      <footprints>
+        <fp>D*DO?201AD*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">MBR340</field>
+        <field name="Footprint">Diode_THT:D_DO-201AD_P15.24mm_Horizontal</field>
+        <field name="Datasheet">http://www.onsemi.com/pub_link/Collateral/MBR340-D.PDF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HunterCat-NFC-rescue" part="AP2112K-3.3-Regulator_Linear">
+      <footprints>
+        <fp>SOT?23?5*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP2112K-3.3-Regulator_Linear</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="HunterCat-NFC-rescue" part="USB_C_Plug_USB2.0-Connector">
+      <footprints>
+        <fp>USB*C*Plug*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_C_Plug_USB2.0-Connector</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="power_in"/>
+        <pin num="A4" name="VBUS" type="power_in"/>
+        <pin num="A5" name="CC" type="bidirectional"/>
+        <pin num="A6" name="D+" type="bidirectional"/>
+        <pin num="A7" name="D-" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="VCONN" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="Jumper_2_Open">
+      <description>Jumper, 2-pole, open</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_2_Open</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Memory_Flash" part="W25Q32JVZP">
+      <description>32Mb Serial Flash Memory, Standard/Dual/Quad SPI, DFN-8</description>
+      <docs>http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf</docs>
+      <footprints>
+        <fp>WSON*1EP*6x5mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">W25Q32JVZP</field>
+        <field name="Footprint">Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm</field>
+        <field name="Datasheet">http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~{CS}" type="input"/>
+        <pin num="2" name="DO(IO1)" type="bidirectional"/>
+        <pin num="3" name="IO2" type="bidirectional"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="DI(IO0)" type="bidirectional"/>
+        <pin num="6" name="CLK" type="input"/>
+        <pin num="7" name="IO3" type="bidirectional"/>
+        <pin num="8" name="VCC" type="power_in"/>
+        <pin num="9" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PicoWAN-rescue" part="RP2040-MCU_RaspberryPi_and_Boards-PicoWAN-rescue-PicoWAN-rescue">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">RP2040-MCU_RaspberryPi_and_Boards-PicoWAN-rescue-PicoWAN-rescue</field>
+        <field name="Footprint">RP2040_minimal:RP2040-QFN-56</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IOVDD" type="power_in"/>
+        <pin num="2" name="GPIO0" type="bidirectional"/>
+        <pin num="3" name="GPIO1" type="bidirectional"/>
+        <pin num="4" name="GPIO2" type="bidirectional"/>
+        <pin num="5" name="GPIO3" type="bidirectional"/>
+        <pin num="6" name="GPIO4" type="bidirectional"/>
+        <pin num="7" name="GPIO5" type="bidirectional"/>
+        <pin num="8" name="GPIO6" type="bidirectional"/>
+        <pin num="9" name="GPIO7" type="bidirectional"/>
+        <pin num="10" name="IOVDD" type="power_in"/>
+        <pin num="11" name="GPIO8" type="bidirectional"/>
+        <pin num="12" name="GPIO9" type="bidirectional"/>
+        <pin num="13" name="GPIO10" type="bidirectional"/>
+        <pin num="14" name="GPIO11" type="bidirectional"/>
+        <pin num="15" name="GPIO12" type="bidirectional"/>
+        <pin num="16" name="GPIO13" type="bidirectional"/>
+        <pin num="17" name="GPIO14" type="bidirectional"/>
+        <pin num="18" name="GPIO15" type="bidirectional"/>
+        <pin num="19" name="TESTEN" type="passive"/>
+        <pin num="20" name="XIN" type="input"/>
+        <pin num="21" name="XOUT" type="passive"/>
+        <pin num="22" name="IOVDD" type="power_in"/>
+        <pin num="23" name="DVDD" type="power_in"/>
+        <pin num="24" name="SWCLK" type="output"/>
+        <pin num="25" name="SWD" type="bidirectional"/>
+        <pin num="26" name="RUN" type="input"/>
+        <pin num="27" name="GPIO16" type="bidirectional"/>
+        <pin num="28" name="GPIO17" type="bidirectional"/>
+        <pin num="29" name="GPIO18" type="bidirectional"/>
+        <pin num="30" name="GPIO19" type="bidirectional"/>
+        <pin num="31" name="GPIO20" type="bidirectional"/>
+        <pin num="32" name="GPIO21" type="bidirectional"/>
+        <pin num="33" name="IOVDD" type="power_in"/>
+        <pin num="34" name="GPIO22" type="bidirectional"/>
+        <pin num="35" name="GPIO23" type="bidirectional"/>
+        <pin num="36" name="GPIO24" type="bidirectional"/>
+        <pin num="37" name="GPIO25" type="bidirectional"/>
+        <pin num="38" name="GPIO26_ADC0" type="bidirectional"/>
+        <pin num="39" name="GPIO27_ADC1" type="bidirectional"/>
+        <pin num="40" name="GPIO28_ADC2" type="bidirectional"/>
+        <pin num="41" name="GPIO29_ADC3" type="bidirectional"/>
+        <pin num="42" name="IOVDD" type="power_in"/>
+        <pin num="43" name="ADC_AVDD" type="power_in"/>
+        <pin num="44" name="VREG_IN" type="power_in"/>
+        <pin num="45" name="VREG_VOUT" type="power_out"/>
+        <pin num="46" name="USB_DM" type="bidirectional"/>
+        <pin num="47" name="USB_DP" type="bidirectional"/>
+        <pin num="48" name="USB_VDD" type="power_in"/>
+        <pin num="49" name="IOVDD" type="power_in"/>
+        <pin num="50" name="DVDD" type="power_in"/>
+        <pin num="51" name="QSPI_SD3" type="bidirectional"/>
+        <pin num="52" name="QSPI_SCLK" type="output"/>
+        <pin num="53" name="QSPI_SD0" type="bidirectional"/>
+        <pin num="54" name="QSPI_SD2" type="bidirectional"/>
+        <pin num="55" name="QSPI_SD1" type="bidirectional"/>
+        <pin num="56" name="QSPI_SS" type="bidirectional"/>
+        <pin num="57" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPST">
+      <description>Single Pole Single Throw (SPST) switch</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPST</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hunter-cat-nfc" part="PN7150B0HN_C11002E-PN7150B0HN_C11002E">
+      <docs>https://www.mouser.mx/datasheet/2/302/PN7150-1386066.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PN7150B0HN_C11002E-PN7150B0HN_C11002E</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-40-1EP_6x6mm_P0.5mm_EP4.6x4.6mm</field>
+        <field name="Datasheet">https://www.mouser.mx/datasheet/2/302/PN7150-1386066.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="I2CADR0" type="input"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="I2CADR1" type="input"/>
+        <pin num="4" name="VSS(PAD)" type="power_in"/>
+        <pin num="5" name="I2CSDA" type="bidirectional"/>
+        <pin num="6" name="VDD(PAD)" type="power_in"/>
+        <pin num="7" name="I2CSCL" type="input"/>
+        <pin num="8" name="IRQ" type="output"/>
+        <pin num="9" name="VSS" type="power_in"/>
+        <pin num="10" name="VEN" type="input"/>
+        <pin num="12" name="VBAT2" type="power_in"/>
+        <pin num="13" name="VBAT1" type="power_in"/>
+        <pin num="14" name="VDD(TX)" type="power_in"/>
+        <pin num="15" name="RXN" type="input"/>
+        <pin num="16" name="RXP" type="input"/>
+        <pin num="17" name="VDD(MID)" type="power_in"/>
+        <pin num="18" name="TX2" type="output"/>
+        <pin num="19" name="VSS(TX)" type="power_in"/>
+        <pin num="21" name="TX1" type="output"/>
+        <pin num="22" name="VDD(TX_IN)" type="power_in"/>
+        <pin num="26" name="VBAT" type="power_in"/>
+        <pin num="27" name="VSS" type="power_in"/>
+        <pin num="28" name="VDDA" type="power_in"/>
+        <pin num="29" name="VDD" type="power_in"/>
+        <pin num="30" name="VDDD" type="power_in"/>
+        <pin num="36" name="NFC_CLK_XTAL1" type="input"/>
+        <pin num="37" name="NFC_CLK_XTAL2" type="output"/>
+        <pin num="40" name="CLK_REQ" type="output"/>
+        <pin num="41" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Battery_Management">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Battery_Management.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Diode.kicad_sym</uri>
+    </library>
+    <library logical="HunterCat-NFC-rescue">
+      <uri>C:\Users\DELL\OneDrive\Documentos\GitHub\HunterCatNFC\Hardware\HunterCat-NFC/HunterCat-NFC-rescue.lib</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Jumper.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Memory_Flash">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Memory_Flash.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Switch.kicad_sym</uri>
+    </library>
+    <library logical="hunter-cat-nfc">
+      <uri>C:\Users\DELL\OneDrive\Documentos\GitHub\HunterCatNFC\Hardware\HunterCat-NFC/library/hunter-cat-nfc.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+1V2">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="DVDD" pintype="power_in"/>
+      <node ref="U1" pin="45" pinfunction="VREG_VOUT" pintype="power_out"/>
+      <node ref="U1" pin="50" pinfunction="DVDD" pintype="power_in"/>
+    </net>
+    <net code="2" name="+3V3">
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="C26" pin="1" pintype="passive"/>
+      <node ref="C27" pin="1" pintype="passive"/>
+      <node ref="C28" pin="1" pintype="passive"/>
+      <node ref="C29" pin="1" pintype="passive"/>
+      <node ref="C30" pin="1" pintype="passive"/>
+      <node ref="C31" pin="1" pintype="passive"/>
+      <node ref="C32" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="IOVDD" pintype="power_in"/>
+      <node ref="U1" pin="10" pinfunction="IOVDD" pintype="power_in"/>
+      <node ref="U1" pin="22" pinfunction="IOVDD" pintype="power_in"/>
+      <node ref="U1" pin="33" pinfunction="IOVDD" pintype="power_in"/>
+      <node ref="U1" pin="42" pinfunction="IOVDD" pintype="power_in"/>
+      <node ref="U1" pin="43" pinfunction="ADC_AVDD" pintype="power_in"/>
+      <node ref="U1" pin="44" pinfunction="VREG_IN" pintype="power_in"/>
+      <node ref="U1" pin="48" pinfunction="USB_VDD" pintype="power_in"/>
+      <node ref="U1" pin="49" pinfunction="IOVDD" pintype="power_in"/>
+      <node ref="U2" pin="12" pinfunction="VBAT2" pintype="power_in"/>
+      <node ref="U2" pin="13" pinfunction="VBAT1" pintype="power_in"/>
+      <node ref="U2" pin="26" pinfunction="VBAT" pintype="power_in"/>
+      <node ref="U2" pin="6" pinfunction="VDD(PAD)" pintype="power_in"/>
+      <node ref="U4" pin="5" pinfunction="VOUT" pintype="power_out"/>
+      <node ref="U5" pin="8" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="3" name="+BATT">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="VBAT" pintype="power_out"/>
+    </net>
+    <net code="4" name="/ADR0">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="I2CADR0" pintype="input"/>
+    </net>
+    <net code="5" name="/ADR1">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="I2CADR1" pintype="input"/>
+    </net>
+    <net code="6" name="/B_ADC">
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="U1" pin="38" pinfunction="GPIO26_ADC0" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/D+">
+      <node ref="P1" pin="A6" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="/D-">
+      <node ref="P1" pin="A7" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="/GPIO">
+      <node ref="SW4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="31" pinfunction="GPIO20" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/GPIO1">
+      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="32" pinfunction="GPIO21" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/GPIO2">
+      <node ref="SW3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="30" pinfunction="GPIO19" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/IRQ">
+      <node ref="U1" pin="29" pinfunction="GPIO18" pintype="bidirectional"/>
+      <node ref="U2" pin="8" pinfunction="IRQ" pintype="output"/>
+    </net>
+    <net code="13" name="/LED1">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="GPIO8" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/LED2">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="GPIO9" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/LED3">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GPIO10" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/QSPI_CS">
+      <node ref="JP1" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="U1" pin="56" pinfunction="QSPI_SS" pintype="bidirectional"/>
+      <node ref="U5" pin="1" pinfunction="~{CS}" pintype="input"/>
+    </net>
+    <net code="17" name="/QSPI_DATA0">
+      <node ref="U1" pin="53" pinfunction="QSPI_SD0" pintype="bidirectional"/>
+      <node ref="U5" pin="5" pinfunction="DI(IO0)" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/QSPI_DATA1">
+      <node ref="U1" pin="55" pinfunction="QSPI_SD1" pintype="bidirectional"/>
+      <node ref="U5" pin="2" pinfunction="DO(IO1)" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="/QSPI_DATA2">
+      <node ref="U1" pin="54" pinfunction="QSPI_SD2" pintype="bidirectional"/>
+      <node ref="U5" pin="3" pinfunction="IO2" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/QSPI_DATA3">
+      <node ref="U1" pin="51" pinfunction="QSPI_SD3" pintype="bidirectional"/>
+      <node ref="U5" pin="7" pinfunction="IO3" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/QSPI_SCK">
+      <node ref="U1" pin="52" pinfunction="QSPI_SCLK" pintype="output"/>
+      <node ref="U5" pin="6" pinfunction="CLK" pintype="input"/>
+    </net>
+    <net code="22" name="/RD+">
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="U1" pin="47" pinfunction="USB_DP" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="/RD-">
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="U1" pin="46" pinfunction="USB_DM" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="/RST">
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="26" pinfunction="RUN" pintype="input"/>
+    </net>
+    <net code="25" name="/RXN">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="RXN" pintype="input"/>
+    </net>
+    <net code="26" name="/RXP">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="U2" pin="16" pinfunction="RXP" pintype="input"/>
+    </net>
+    <net code="27" name="/SCL">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="GPIO5" pintype="bidirectional"/>
+      <node ref="U2" pin="7" pinfunction="I2CSCL" pintype="input"/>
+    </net>
+    <net code="28" name="/SDA">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="GPIO4" pintype="bidirectional"/>
+      <node ref="U2" pin="5" pinfunction="I2CSDA" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="/SWCLK">
+      <node ref="U1" pin="24" pinfunction="SWCLK" pintype="output"/>
+    </net>
+    <net code="30" name="/SWDIO">
+      <node ref="U1" pin="25" pinfunction="SWD" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="/TX1">
+      <node ref="L1" pin="1" pintype="passive"/>
+      <node ref="U2" pin="21" pinfunction="TX1" pintype="output"/>
+    </net>
+    <net code="32" name="/TX2">
+      <node ref="L2" pin="2" pintype="passive"/>
+      <node ref="U2" pin="18" pinfunction="TX2" pintype="output"/>
+    </net>
+    <net code="33" name="/VEN">
+      <node ref="U1" pin="28" pinfunction="GPIO17" pintype="bidirectional"/>
+      <node ref="U2" pin="10" pinfunction="VEN" pintype="input"/>
+    </net>
+    <net code="34" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="C26" pin="2" pintype="passive"/>
+      <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="C28" pin="2" pintype="passive"/>
+      <node ref="C29" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C30" pin="2" pintype="passive"/>
+      <node ref="C31" pin="2" pintype="passive"/>
+      <node ref="C32" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="P1" pin="A1" pinfunction="GND" pintype="power_in"/>
+      <node ref="P1" pin="A12" pinfunction="GND" pintype="passive"/>
+      <node ref="P1" pin="B1" pinfunction="GND" pintype="passive"/>
+      <node ref="P1" pin="B12" pinfunction="GND" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="TESTEN" pintype="passive"/>
+      <node ref="U1" pin="57" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="19" pinfunction="VSS(TX)" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U2" pin="27" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U2" pin="4" pinfunction="VSS(PAD)" pintype="power_in"/>
+      <node ref="U2" pin="41" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="Y1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Y1" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="Y2" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="35" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="XIN" pintype="input"/>
+      <node ref="Y2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="36" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="U2" pin="37" pinfunction="NFC_CLK_XTAL2" pintype="output"/>
+      <node ref="Y1" pin="3" pinfunction="3" pintype="passive"/>
+    </net>
+    <net code="37" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="U2" pin="36" pinfunction="NFC_CLK_XTAL1" pintype="input"/>
+      <node ref="Y1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="38" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="U2" pin="28" pinfunction="VDDA" pintype="power_in"/>
+      <node ref="U2" pin="29" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U2" pin="30" pinfunction="VDDD" pintype="power_in"/>
+    </net>
+    <net code="39" name="Net-(C7-Pad1)">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="U2" pin="17" pinfunction="VDD(MID)" pintype="power_in"/>
+    </net>
+    <net code="40" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="U2" pin="14" pinfunction="VDD(TX)" pintype="power_in"/>
+      <node ref="U2" pin="22" pinfunction="VDD(TX_IN)" pintype="power_in"/>
+    </net>
+    <net code="41" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+    </net>
+    <net code="42" name="Net-(C11-Pad1)">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+    </net>
+    <net code="43" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="L1" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+    </net>
+    <net code="44" name="Net-(C13-Pad2)">
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="L2" pin="1" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+    </net>
+    <net code="45" name="Net-(C14-Pad1)">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(C15-Pad1)">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="Y2" pin="3" pinfunction="3" pintype="passive"/>
+    </net>
+    <net code="47" name="Net-(C18-Pad1)">
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="48" name="Net-(C23-Pad1)">
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="SW5" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="VIN" pintype="power_in"/>
+      <node ref="U4" pin="3" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="49" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="50" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+    </net>
+    <net code="51" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+    </net>
+    <net code="52" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+    </net>
+    <net code="53" name="Net-(D5-Pad1)">
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="SW5" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="54" name="Net-(F1-Pad1)">
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="P1" pin="A4" pinfunction="VBUS" pintype="power_in"/>
+      <node ref="P1" pin="A9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="P1" pin="B4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="P1" pin="B9" pinfunction="VBUS" pintype="passive"/>
+    </net>
+    <net code="55" name="Net-(L3-Pad1)">
+      <node ref="L3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+    </net>
+    <net code="56" name="Net-(L3-Pad2)">
+      <node ref="L3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="57" name="Net-(P1-PadA5)">
+      <node ref="P1" pin="A5" pinfunction="CC" pintype="bidirectional"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="58" name="Net-(P1-PadB5)">
+      <node ref="P1" pin="B5" pinfunction="VCONN" pintype="bidirectional"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+    </net>
+    <net code="59" name="Net-(R7-Pad2)">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="XOUT" pintype="passive"/>
+    </net>
+    <net code="60" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="PROG" pintype="input"/>
+    </net>
+    <net code="61" name="Net-(R12-Pad1)">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="STAT" pintype="output"/>
+    </net>
+    <net code="62" name="VBUS">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="63" name="unconnected-(P1-PadS1)">
+      <node ref="P1" pin="S1" pinfunction="SHIELD" pintype="passive+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U1-Pad2)">
+      <node ref="U1" pin="2" pinfunction="GPIO0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U1-Pad3)">
+      <node ref="U1" pin="3" pinfunction="GPIO1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(U1-Pad4)">
+      <node ref="U1" pin="4" pinfunction="GPIO2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(U1-Pad5)">
+      <node ref="U1" pin="5" pinfunction="GPIO3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(U1-Pad8)">
+      <node ref="U1" pin="8" pinfunction="GPIO6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U1-Pad9)">
+      <node ref="U1" pin="9" pinfunction="GPIO7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U1-Pad14)">
+      <node ref="U1" pin="14" pinfunction="GPIO11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U1-Pad15)">
+      <node ref="U1" pin="15" pinfunction="GPIO12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(U1-Pad16)">
+      <node ref="U1" pin="16" pinfunction="GPIO13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(U1-Pad17)">
+      <node ref="U1" pin="17" pinfunction="GPIO14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(U1-Pad18)">
+      <node ref="U1" pin="18" pinfunction="GPIO15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(U1-Pad27)">
+      <node ref="U1" pin="27" pinfunction="GPIO16" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(U1-Pad34)">
+      <node ref="U1" pin="34" pinfunction="GPIO22" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(U1-Pad35)">
+      <node ref="U1" pin="35" pinfunction="GPIO23" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(U1-Pad36)">
+      <node ref="U1" pin="36" pinfunction="GPIO24" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="79" name="unconnected-(U1-Pad37)">
+      <node ref="U1" pin="37" pinfunction="GPIO25" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(U1-Pad39)">
+      <node ref="U1" pin="39" pinfunction="GPIO27_ADC1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="81" name="unconnected-(U1-Pad40)">
+      <node ref="U1" pin="40" pinfunction="GPIO28_ADC2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="82" name="unconnected-(U1-Pad41)">
+      <node ref="U1" pin="41" pinfunction="GPIO29_ADC3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="83" name="unconnected-(U2-Pad40)">
+      <node ref="U2" pin="40" pinfunction="CLK_REQ" pintype="output+no_connect"/>
+    </net>
+    <net code="84" name="unconnected-(U4-Pad4)">
+      <node ref="U4" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="85" name="unconnected-(U5-Pad9)">
+      <node ref="U5" pin="9" pinfunction="EP" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>
