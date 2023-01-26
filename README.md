@@ -1,4 +1,4 @@
-# Huntercat NFC
+# Hunter Cat NFC
 
 <a href="https://electroniccats.com/store/hunter-cat-nfc//">
   <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" height="104" />
@@ -18,9 +18,9 @@ Detect hidden readers seeking to read your cards without authorization for cloni
 
 1.- Turn on Hunter Cat NFC
 2.- Wait for the LEDs to turn off
-3.-Red LED flashes every 1 second
-4.- Approach the reader, the huntercat NFC LEDs should light up indicating if an NFC reader was detected.
-5.- If it does not turn on and the LED stays on, it is not near an NFC reader. 
+3.- Red LED flashes every 1 second
+4.- Approach the reader, the Hunter Cat NFC LEDs should light up indicating if an NFC reader was detected
+5.- If it does not turn on and the LED stays on, it is not near an NFC reader
 
 ## How does it work? 
 
@@ -28,22 +28,19 @@ Hunter Cat NFC can be set to behave either as an NFC reader a tag or to establis
 
 NFC USB Dongle features a SAMD21 MCU which works in conjunction with the PN7150. The USB interface is provided by SAMD21 MCU, and the NFC functionality is ensured thanks to PN7150.
 
-NFC is designed to be intuitive for users. The Communication between two devices is established in the simplest way possible — by bringing them close to each other. NFC frontend can operate in three distinct modes:
+NFC is designed to be intuitive for users. The communication between two devices is established in the simplest way possible — by bringing them close to each other. NFC frontend can operate in three distinct modes:
 
-### Card emulation mode — where HunterCat NFC behaves like a smart card or a tag
+### Card emulation mode — where Hunter Cat NFC behaves like a smart card or a tag
 
+In this mode, Hunter Cat NFC emulates a NFC tag. It doesn’t initiate the communication, it only responds to a NFC reader. A typical application of the card emulation mode is how people use NFC in their smartphones to replace several cards, badges or tags at once (using the same phone for RFID access controls, contactless payments and so on). Card emulation mode, however, is not useful just for smartphones, but for any type of portable device.
 
-In this mode, HunterCat NFC emulates a NFC tag. It doesn’t initiate the communication, it only responds to a NFC reader. A typical application of the card emulation mode is how people use NFC in their smartphones to replace several cards, badges or tags at once (using the same phone for RFID access controls, contactless payments and so on). Card emulation mode, however, is not useful just for smartphones, but for any type of portable device.
+### Read/Write — where Hunter Cat NFC behaves as an NFC Reader/Writer
 
-
-### Read/Write — where HunterCat NFC behaves as an NFC Reader/Writer
-
-Here, Hunter Cat communicates with a passive tag, NFC smart card, or an NFC device operating in card emulation mode. It can read or write to a tag (although reading is a more common use-case because tags will often be write protected). In this mode, the HunterCat NFC generates the RF field, while a tag or card only modulates it.
+Here, Hunter Cat NFC communicates with a passive tag, NFC smart card, or an NFC device operating in card emulation mode. It can read or write to a tag (although reading is a more common use-case because tags will often be write protected). In this mode, the Hunter Cat NFC generates the RF field, while a tag or card only modulates it.
 
 ### Peer-to-peer — for more complex interactions
 
 Peer-to-peer mode establishes a two-way communication channel between a pair of NFC-enabled devices. When a user brings two devices close to each other, the two NFC chips establish a P2P connection and exchange data.
-
 
 ## Characteristics:
 - Procesador Cortex M0+
@@ -68,7 +65,6 @@ Peer-to-peer mode establishes a two-way communication channel between a pair of 
 
 ##  Wiki and Getting Started
 [Getting Started in our Wiki](https://github.com/ElectronicCats/HunterCatNFC/wiki)
-
 <img src="https://raw.githubusercontent.com/wiki/ElectronicCats/HunterCatNFC/assets/Hunter_Cat_NFC.jpg" />
 
 ## License
