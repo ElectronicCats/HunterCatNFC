@@ -1,12 +1,14 @@
 # Hunter Cat NFC
 
-<a href="https://electroniccats.com/store/hunter-cat-nfc//">
-  <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" height="104" />
+<a href="https://electroniccats.com/store/hunter-cat-nfc/">
+  <p align="center">
+  <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" height="104"  />
+  </p>
 </a>
 
 ## How does the Hunter Cat NFC work?
 
-The Hunter Cat NFC is the latest security tool for contactless (Near Field Communication) used in access control, identification and bank cards. Specially created to identify NFC readers and sniffing tools, with this tool you can audit, read or emulate cards of different types. 
+The Hunter Cat NFC is a security tool for contactless (Near Field Communication) used in access control, identification and bank cards. Specially created to identify NFC readers and sniffing tools, with this tool you can audit, read or emulate cards of different types. 
 
 ## Understanding the Hunter Cat NFC and its LEDs 
 
@@ -64,13 +66,16 @@ Peer-to-peer mode establishes a two-way communication channel between a pair of 
 - Includes NXP ISO/IEC14443-A and Innovatron ISO/IEC14443-B intellectual property licensing rights
 
 ##  Wiki and Getting Started
-[Getting Started in our Wiki](https://github.com/ElectronicCats/HunterCatNFC/wiki)
-<img src="https://raw.githubusercontent.com/wiki/ElectronicCats/HunterCatNFC/assets/Hunter_Cat_NFC.jpg" />
+[**Getting Started in our Wiki**](https://github.com/ElectronicCats/HunterCatNFC/wiki)
+
+<a href="https://github.com/ElectronicCats/HunterCatNFC/wiki">
+  <img src="https://user-images.githubusercontent.com/107638696/216455658-128e4589-53a3-4a92-9ddd-d264ae84368a.jpg" height="400" />
+</a>
 
 ## License
-
-![OpenSourceLicense](https://github.com/ElectronicCats/AjoloteBoard/raw/master/OpenSourceLicense.png)
-
+<a>
+  <img src="https://github.com/ElectronicCats/AjoloteBoard/raw/master/OpenSourceLicense.png" height="150" />
+</a>
 Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
 
 Designed by Electronic Cats.
