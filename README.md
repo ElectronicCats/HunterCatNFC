@@ -18,11 +18,11 @@ The device has a preloaded reader detection firmware that lets the user know whe
 
 Detect hidden readers seeking to read your cards without authorization for cloning
 
-1.- Turn on Hunter Cat NFC
-2.- Wait for the LEDs to turn off
-3.- Red LED flashes every 1 second
-4.- Approach the reader, the Hunter Cat NFC LEDs should light up indicating if an NFC reader was detected
-5.- If it does not turn on and the LED stays on, it is not near an NFC reader
+1. Turn on Hunter Cat NFC
+2. Wait for the LEDs to turn off
+3. Red LED flashes every 1 second
+4. Approach the reader, the Hunter Cat NFC LEDs should light up indicating if an NFC reader was detected
+5. If it does not turn on and the LED stays on, it is not near an NFC reader
 
 ## How does it work? 
 
