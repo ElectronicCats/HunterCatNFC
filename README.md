@@ -8,15 +8,15 @@
 
 ## How does the Hunter Cat NFC work?
 
-The Hunter Cat NFC is a security tool for contactless (Near Field Communication) used in access control, identification and bank cards. Specially created to identify NFC readers and sniffing tools, with this tool you can audit, read or emulate cards of different types. 
+The Hunter Cat NFC is a security tool for contactless (Near Field Communication) used in access control, identification, and bank cards. It is specially created to identify NFC readers and sniffing tools. With this tool, you can audit, read or emulate cards of different types.
 
 ## Understanding the Hunter Cat NFC and its LEDs 
 
-The device has a preloaded reader detection firmware that lets the user know when he is near an NFC reader that is trying to read his card. 
+The device has preloaded reader detection firmware that lets the user know when is near an NFC reader attempting to read his card.
 
 ### Reader detection 
 
-Detect hidden readers seeking to read your cards without authorization for cloning
+To detect hidden readers seeking to read your cards without authorization for cloning.
 
 1. Turn on Hunter Cat NFC
 2. Wait for the LEDs to turn off
@@ -26,7 +26,7 @@ Detect hidden readers seeking to read your cards without authorization for cloni
 
 ## How does it work? 
 
-Hunter Cat NFC can be set to behave either as an NFC reader a tag or to establish a two-way connection with another NFC device. 
+Hunter Cat NFC can be set to behave either as an NFC reader, a tag, or to establish a two-way connection with another NFC device.
 
 NFC USB Dongle features a SAMD21 MCU which works in conjunction with the PN7150. The USB interface is provided by SAMD21 MCU, and the NFC functionality is ensured thanks to PN7150.
 
@@ -34,7 +34,7 @@ NFC is designed to be intuitive for users. The communication between two devices
 
 ### Card emulation mode — where Hunter Cat NFC behaves like a smart card or a tag
 
-In this mode, Hunter Cat NFC emulates a NFC tag. It doesn’t initiate the communication, it only responds to a NFC reader. A typical application of the card emulation mode is how people use NFC in their smartphones to replace several cards, badges or tags at once (using the same phone for RFID access controls, contactless payments and so on). Card emulation mode, however, is not useful just for smartphones, but for any type of portable device.
+In this mode, Hunter Cat NFC emulates a NFC tag. It doesn’t initiate the communication, it only responds to a NFC reader. A typical application of the card emulation mode is how people use NFC in their smartphones to replace several cards, badges or tags at once (using the same phone for RFID access controls, contactless payments and so on). Card emulation mode, however, is not limited to smartphones but can be used for any portable device.
 
 ### Read/Write — where Hunter Cat NFC behaves as an NFC Reader/Writer
 
@@ -76,7 +76,7 @@ Peer-to-peer mode establishes a two-way communication channel between a pair of 
 <a>
   <img src="https://github.com/ElectronicCats/AjoloteBoard/raw/master/OpenSourceLicense.png" height="150" />
 </a>
-Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
+Electronic Cats invests time and resources in providing this open-source design. Please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
 
 Designed by Electronic Cats.
 
@@ -84,6 +84,6 @@ Firmware released under an GNU AGPL v3.0 license. See the LICENSE file for more 
 
 Hardware released under an CERN Open Hardware Licence v1.2. See the LICENSE_HARDWARE file for more information.
 
-Electronic Cats is a registered trademark, please do not use if you sell these PCBs.
+Electronic Cats is a registered trademark. Please do not use if you sell these PCBs.
 
 November 2019
