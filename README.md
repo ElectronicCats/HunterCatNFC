@@ -72,6 +72,11 @@ Peer-to-peer mode establishes a two-way communication channel between a pair of 
   <img src="https://user-images.githubusercontent.com/107638696/216455658-128e4589-53a3-4a92-9ddd-d264ae84368a.jpg" height="400" />
 </a>
 
+## Disclaimer
+Hunter Cat NFC, is a wireless penetration testing tool intended solely for use in authorized security audits, where such usage is permitted by applicable laws and regulations. Before utilizing this tool, it is crucial to ensure compliance with all relevant legal requirements and obtain appropriate permissions from the relevant authorities.
+
+It is essential to note that the board does not provide any means or authorization to utilize credit cards or engage in any financial transactions that are not legally authorized. Electronic Cats holds no responsibility for any unauthorized use of the tool or any resulting damages.
+
 ## License
 <a>
   <img src="https://github.com/ElectronicCats/AjoloteBoard/raw/master/OpenSourceLicense.png" height="150" />
