@@ -6,6 +6,7 @@
   </p>
 </a>
 
+
 ## How does the Hunter Cat NFC work?
 
 The Hunter Cat NFC is a security tool for contactless (Near Field Communication) used in access control, identification, and bank cards. It is specially created to identify NFC readers and sniffing tools. With this tool, you can audit, read or emulate cards of different types.
@@ -81,6 +82,10 @@ It is essential to note that the board does not provide any means or authorizati
 <a>
   <img src="https://github.com/ElectronicCats/AjoloteBoard/raw/master/OpenSourceLicense.png" height="150" />
 </a>
+
+## Donation
+ [![Donation](https://img.shields.io/badge/PAYPAL-donate-blue.svg)](https://paypal.me/electroniccats?country.x=MX&locale.x=es_XC)
+ 
 Electronic Cats invests time and resources in providing this open-source design. Please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
 
 Designed by Electronic Cats.
