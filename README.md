@@ -7,13 +7,12 @@
 
 <p align=center>
 <a href="https://electroniccats.com/store/hunter-cat-nfc/">
-  <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" width="200" height="104" />
+  <img src="https://github.com/ElectronicCats/HunterCatNFC/assets/107638696/d49f263c-4b70-4df3-b06b-820b82af41b5" width="200" height="104" />
 </a>
 <a href="https://github.com/ElectronicCats/HunterCatNFC/wiki">
   <img src="https://github.com/ElectronicCats/flipper-shields/assets/44976441/6aa7f319-3256-442e-a00d-33c8126833ec" width="200" height="104" />
 </a>
 </p>
-
 
 ## How does the Hunter Cat NFC work?
 
